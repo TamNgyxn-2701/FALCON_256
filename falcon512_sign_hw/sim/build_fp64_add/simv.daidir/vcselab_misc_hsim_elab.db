@@ -1,5 +1,5 @@
 psSimBaseName                      	sim/build_fp64_add/simv
-pDaiDir                            	/media/sf_share_folder/FALCON/thesys_falcon/falcon512_sign_hw/sim/build_fp64_add/simv.daidir
+pDaiDir                            	/home/ltk/FALCON/falcon512_sign_hw/sim/build_fp64_add/simv.daidir
 destPath                           	csrc/
 hsMainFileCount                    	0
 hsMainFileName                     	dummy

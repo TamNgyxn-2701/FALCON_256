@@ -8,7 +8,7 @@ VSRC=..
 TARGET_ARCH=
 
 # Choose name of executable 
-PRODUCTBASE=$(VSRC)/sim/build_fp64_add/simv
+PRODUCTBASE=$(VSRC)/sim/build_fp64_add_trace/simv
 
 PRODUCT=$(PRODUCTBASE)
 

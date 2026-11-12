@@ -1,0 +1,22 @@
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version E-2011.03-3; Runtime version E-2011.03-3;  Nov 12 20:38 2017
+[PROGRESS] case=0 pass=1 fail=0
+[PROGRESS] case=500 pass=501 fail=0
+[PROGRESS] case=1000 pass=1001 fail=0
+[PROGRESS] case=1500 pass=1501 fail=0
+[PROGRESS] case=2000 pass=2001 fail=0
+
+========================================
+BFU IFFT TRACE TEST
+TOTAL = 2048
+PASS  = 2048
+FAIL  = 0
+========================================
+BFU IFFT TRACE : PASS
+$finish called from file "tb/unit/arith/tb_bfu_ifft_trace.v", line 224.
+$finish at simulation time              2058000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2058000 ps
+CPU Time:      0.140 seconds;       Data structure size:   0.3Mb
+Sun Nov 12 20:38:03 2017

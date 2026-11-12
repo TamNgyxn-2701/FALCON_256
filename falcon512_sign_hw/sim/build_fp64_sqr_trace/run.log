@@ -1,0 +1,27 @@
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version E-2011.03-3; Runtime version E-2011.03-3;  Oct 29 17:30 2017
+[PROGRESS] case=0 pass=1 fail=0
+[PROGRESS] case=1000 pass=1001 fail=0
+[PROGRESS] case=2000 pass=2001 fail=0
+[PROGRESS] case=3000 pass=3001 fail=0
+[PROGRESS] case=4000 pass=4001 fail=0
+[PROGRESS] case=5000 pass=5001 fail=0
+[PROGRESS] case=6000 pass=6001 fail=0
+[PROGRESS] case=7000 pass=7001 fail=0
+[PROGRESS] case=8000 pass=8001 fail=0
+[PROGRESS] case=9000 pass=9001 fail=0
+
+========================================
+FP64 SQR TRACE TEST
+TOTAL = 9447
+PASS  = 9447
+FAIL  = 0
+========================================
+FP64 SQR TRACE : PASS
+$finish called from file "tb/unit/arith/tb_fp64_sqr_trace.v", line 88.
+$finish at simulation time              9457000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 9457000 ps
+CPU Time:      0.180 seconds;       Data structure size:   0.3Mb
+Sun Oct 29 17:30:29 2017

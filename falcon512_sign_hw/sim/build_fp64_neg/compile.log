@@ -1,0 +1,28 @@
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version '' is not supported on 'i686' officially, assuming linux 
+  compatibility by default. Set VCS_ARCH_OVERRIDE to linux or suse32 to 
+  override.
+  Please refer to release notes for information on supported platforms.
+
+                         Chronologic VCS (TM)
+           Version E-2011.03-3 -- Sun Oct 29 17:12:37 2017
+               Copyright (c) 1991-2011 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file 'rtl/arith/fp64/fp64_neg.v'
+Parsing design file 'tb/unit/arith/tb_fp64_neg.v'
+Top Level Modules:
+       tb_fp64_neg
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+1 module and 0 UDP read.
+recompiling module tb_fp64_neg
+if [ -x /home/ltk/FALCON/falcon512_sign_hw/sim/build_fp64_neg/simv ]; then chmod -x /home/ltk/FALCON/falcon512_sign_hw/sim/build_fp64_neg/simv; fi
+g++  -o /home/ltk/FALCON/falcon512_sign_hw/sim/build_fp64_neg/simv -melf_i386   -Wl,-whole-archive    -Wl,-no-whole-archive  _vcsobj_1_1.o  5NrI_d.o 5NrIB_d.o SIM_l.o     rmapats_mop.o rmapats.o      /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libvirsim.so /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/librterrorinf.so /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libsnpsmalloc.so     /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libvcsnew.so /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libuclinative.so         /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/vcs_save_restore_new.o /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/ctype-stubs_32.a -ldl  -lc -lm -lpthread -ldl 
+/home/ltk/FALCON/falcon512_sign_hw/sim/build_fp64_neg/simv up to date
+CPU time: .048 seconds to compile + .040 seconds to elab + .088 seconds to link

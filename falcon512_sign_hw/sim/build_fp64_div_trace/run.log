@@ -1,0 +1,22 @@
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version E-2011.03-3; Runtime version E-2011.03-3;  Oct 29 17:07 2017
+[PROGRESS] case=0 pass=1 fail=0
+[PROGRESS] case=500 pass=501 fail=0
+[PROGRESS] case=1000 pass=1001 fail=0
+[PROGRESS] case=1500 pass=1501 fail=0
+[PROGRESS] case=2000 pass=2001 fail=0
+
+========================================
+FP64 DIV TRACE TEST
+TOTAL = 2304
+PASS  = 2304
+FAIL  = 0
+========================================
+FP64 DIV TRACE : PASS
+$finish called from file "tb/unit/arith/tb_fp64_div_trace.v", line 97.
+$finish at simulation time              2314000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2314000 ps
+CPU Time:      0.120 seconds;       Data structure size:   0.1Mb
+Sun Oct 29 17:07:38 2017

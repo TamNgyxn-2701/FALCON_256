@@ -1,0 +1,29 @@
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version '' is not supported on 'i686' officially, assuming linux 
+  compatibility by default. Set VCS_ARCH_OVERRIDE to linux or suse32 to 
+  override.
+  Please refer to release notes for information on supported platforms.
+
+                         Chronologic VCS (TM)
+           Version E-2011.03-3 -- Sun Nov 12 09:39:52 2017
+               Copyright (c) 1991-2011 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file 'rtl/arith/fp64/fpr2int.v'
+Parsing design file 'tb/unit/arith/tb_fpr2int_trace.v'
+Parsing library directory file '/home/eda/synopsys/syn_vD-2010.03-SP4/dw/sim_ver/DW_fp_flt2i.v'
+Top Level Modules:
+       tb_fpr2int_trace
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+1 module and 0 UDP read.
+recompiling module tb_fpr2int_trace
+if [ -x /home/ltk/FALCON/falcon512_sign_hw/sim/build_fpr2int_trace/simv ]; then chmod -x /home/ltk/FALCON/falcon512_sign_hw/sim/build_fpr2int_trace/simv; fi
+g++  -o /home/ltk/FALCON/falcon512_sign_hw/sim/build_fpr2int_trace/simv -melf_i386   -Wl,-whole-archive    -Wl,-no-whole-archive  _vcsobj_1_1.o  5NrI_d.o 5NrIB_d.o SIM_l.o     rmapats_mop.o rmapats.o      /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libvirsim.so /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/librterrorinf.so /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libsnpsmalloc.so     /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libvcsnew.so /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libuclinative.so         /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/vcs_save_restore_new.o /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/ctype-stubs_32.a -ldl  -lc -lm -lpthread -ldl 
+/home/ltk/FALCON/falcon512_sign_hw/sim/build_fpr2int_trace/simv up to date
+CPU time: .276 seconds to compile + .180 seconds to elab + .132 seconds to link

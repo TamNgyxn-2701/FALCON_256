@@ -1,0 +1,23 @@
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version E-2011.03-3; Runtime version E-2011.03-3;  Nov 12 09:39 2017
+[PROGRESS] case=0 pass=1 fail=0
+[PROGRESS] case=200 pass=201 fail=0
+[PROGRESS] case=400 pass=401 fail=0
+[PROGRESS] case=600 pass=601 fail=0
+[PROGRESS] case=800 pass=801 fail=0
+[PROGRESS] case=1000 pass=1001 fail=0
+
+========================================
+FPR2INT TRACE TEST
+TOTAL = 1024
+PASS  = 1024
+FAIL  = 0
+========================================
+FPR2INT TRACE : PASS
+$finish called from file "tb/unit/arith/tb_fpr2int_trace.v", line 88.
+$finish at simulation time              1034000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1034000 ps
+CPU Time:      0.140 seconds;       Data structure size:   0.0Mb
+Sun Nov 12 09:39:57 2017

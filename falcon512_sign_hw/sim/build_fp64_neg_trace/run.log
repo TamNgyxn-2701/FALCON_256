@@ -1,0 +1,25 @@
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version E-2011.03-3; Runtime version E-2011.03-3;  Oct 29 17:26 2017
+[PROGRESS] case=0 pass=1 fail=0
+[PROGRESS] case=2000 pass=2001 fail=0
+[PROGRESS] case=4000 pass=4001 fail=0
+[PROGRESS] case=6000 pass=6001 fail=0
+[PROGRESS] case=8000 pass=8001 fail=0
+[PROGRESS] case=10000 pass=10001 fail=0
+[PROGRESS] case=12000 pass=12001 fail=0
+[PROGRESS] case=14000 pass=14001 fail=0
+
+========================================
+FP64 NEG TRACE TEST
+TOTAL = 14079
+PASS  = 14079
+FAIL  = 0
+========================================
+FP64 NEG TRACE : PASS
+$finish called from file "tb/unit/arith/tb_fp64_neg_trace.v", line 86.
+$finish at simulation time             14089000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 14089000 ps
+CPU Time:      0.230 seconds;       Data structure size:   0.4Mb
+Sun Oct 29 17:26:50 2017

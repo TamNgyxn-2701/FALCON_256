@@ -1,0 +1,48 @@
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version E-2011.03-3; Runtime version E-2011.03-3;  Oct 29 17:46 2017
+[PASS] case=0 int=0000000000000000 fpr=0000000000000000
+[PASS] case=1 int=0000000000000001 fpr=3ff0000000000000
+[PASS] case=2 int=ffffffffffffffff fpr=bff0000000000000
+[PASS] case=3 int=0000000000000002 fpr=4000000000000000
+[PASS] case=4 int=fffffffffffffffe fpr=c000000000000000
+[PASS] case=5 int=0000000000000003 fpr=4008000000000000
+[PASS] case=6 int=fffffffffffffffd fpr=c008000000000000
+[PASS] case=7 int=0000000000000007 fpr=401c000000000000
+[PASS] case=8 int=fffffffffffffff9 fpr=c01c000000000000
+[PASS] case=9 int=000000000000000a fpr=4024000000000000
+[PASS] case=10 int=fffffffffffffff6 fpr=c024000000000000
+[PASS] case=11 int=000000000000007f fpr=405fc00000000000
+[PASS] case=12 int=ffffffffffffff80 fpr=c060000000000000
+[PASS] case=13 int=00000000000000ff fpr=406fe00000000000
+[PASS] case=14 int=0000000000000100 fpr=4070000000000000
+[PASS] case=15 int=00000000000001ff fpr=407ff00000000000
+[PASS] case=16 int=0000000000000200 fpr=4080000000000000
+[PASS] case=17 int=0000000000000400 fpr=4090000000000000
+[PASS] case=18 int=fffffffffffffc00 fpr=c090000000000000
+[PASS] case=19 int=0000000000003001 fpr=40c8008000000000
+[PASS] case=20 int=ffffffffffffcfff fpr=c0c8008000000000
+[PASS] case=21 int=0000000000007fff fpr=40dfffc000000000
+[PASS] case=22 int=ffffffffffff8000 fpr=c0e0000000000000
+[PASS] case=23 int=000000000000ffff fpr=40efffe000000000
+[PASS] case=24 int=ffffffffffff0001 fpr=c0efffe000000000
+[PASS] case=25 int=00000000000186a0 fpr=40f86a0000000000
+[PASS] case=26 int=fffffffffffe7960 fpr=c0f86a0000000000
+[PASS] case=27 int=0000000000100000 fpr=4130000000000000
+[PASS] case=28 int=fffffffffff00000 fpr=c130000000000000
+[PASS] case=29 int=0000000001000000 fpr=4170000000000000
+[PASS] case=30 int=000000007fffffff fpr=41dfffffffc00000
+[PASS] case=31 int=ffffffff80000001 fpr=c1dfffffffc00000
+
+========================================
+INT2FPR DIRECTED TEST
+PASS = 32
+FAIL = 0
+========================================
+INT2FPR DIRECTED : PASS
+$finish called from file "tb/unit/arith/tb_int2fpr.v", line 79.
+$finish at simulation time               330000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 330000 ps
+CPU Time:      0.220 seconds;       Data structure size:   0.0Mb
+Sun Oct 29 17:46:10 2017

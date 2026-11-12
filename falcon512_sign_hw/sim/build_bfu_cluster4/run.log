@@ -1,0 +1,26 @@
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version E-2011.03-3; Runtime version E-2011.03-3;  Nov 12 20:47 2017
+
+========================================
+START 4-BFU FFT TEST
+========================================
+
+========================================
+START 4-BFU IFFT TEST
+========================================
+
+========================================
+4-BFU CLUSTER TEST
+FFT  PASS = 32 / 32
+FFT  FAIL = 0
+IFFT PASS = 32 / 32
+IFFT FAIL = 0
+========================================
+4-BFU CLUSTER : PASS
+$finish called from file "tb/unit/arith/tb_bfu_cluster4.v", line 638.
+$finish at simulation time               170000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 170000 ps
+CPU Time:      0.100 seconds;       Data structure size:   0.1Mb
+Sun Nov 12 20:47:33 2017

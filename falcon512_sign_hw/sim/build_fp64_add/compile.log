@@ -6,7 +6,7 @@ Warning-[LNX_OS_VERUN] Unsupported Linux version
   Please refer to release notes for information on supported platforms.
 
                          Chronologic VCS (TM)
-           Version E-2011.03-3 -- Sat Oct 28 12:07:07 2017
+           Version E-2011.03-3 -- Sun Oct 29 15:58:26 2017
                Copyright (c) 1991-2011 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -23,9 +23,11 @@ Top Level Modules:
 TimeScale is 1 ns / 1 ps
 Starting vcs inline pass...
 1 module and 0 UDP read.
-recompiling module tb_fp64_add
-make: Warning: File `filelist.hsopt' has modification time 2.8e+08 s in the future
-Asertion: 'rename(tmp_file, out_file) == 0' failed, file "cgmop.c", line 839
-make: *** [rmapats_mop.o] Error 1
-Make exited with status 2
-CPU time: .116 seconds to compile + .112 seconds to elab + .012 seconds to link
+	However, due to incremental compilation, no re-compilation is necessary.
+make: Warning: File `SIM_l.o' has modification time 2.8e+08 s in the future
+ld -r -m elf_i386 -o pre_vcsobj_1_1.o --whole-archive pre_vcsobj_1_1.a --no-whole-archive
+if [ -x ../sim/build_fp64_add/simv ]; then chmod -x ../sim/build_fp64_add/simv; fi
+g++  -o ../sim/build_fp64_add/simv -melf_i386   -Wl,-whole-archive    -Wl,-no-whole-archive   SIM_l.o 5NrI_d.o 5NrIB_d.o    pre_vcsobj_1_1.o  rmapats_mop.o rmapats.o      /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libvirsim.so /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/librterrorinf.so /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libsnpsmalloc.so     /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libvcsnew.so /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libuclinative.so         /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/vcs_save_restore_new.o /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/ctype-stubs_32.a -ldl  -lc -lm -lpthread -ldl 
+../sim/build_fp64_add/simv up to date
+make: warning:  Clock skew detected.  Your build may be incomplete.
+CPU time: .204 seconds to compile + .100 seconds to elab + .204 seconds to link

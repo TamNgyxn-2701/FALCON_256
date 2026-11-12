@@ -1,0 +1,25 @@
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version E-2011.03-3; Runtime version E-2011.03-3;  Oct 29 16:49 2017
+[PROGRESS] case=0 pass=1 fail=0
+[PROGRESS] case=10000 pass=10001 fail=0
+[PROGRESS] case=20000 pass=20001 fail=0
+[PROGRESS] case=30000 pass=30001 fail=0
+[PROGRESS] case=40000 pass=40001 fail=0
+[PROGRESS] case=50000 pass=50001 fail=0
+[PROGRESS] case=60000 pass=60001 fail=0
+[PROGRESS] case=70000 pass=70001 fail=0
+
+========================================
+FP64 SUB TRACE TEST
+TOTAL = 76725
+PASS  = 76725
+FAIL  = 0
+========================================
+FP64 SUB TRACE : PASS
+$finish called from file "tb/unit/arith/tb_fp64_sub_trace.v", line 97.
+$finish at simulation time             76735000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 76735000 ps
+CPU Time:      0.200 seconds;       Data structure size:   3.5Mb
+Sun Oct 29 16:49:14 2017
