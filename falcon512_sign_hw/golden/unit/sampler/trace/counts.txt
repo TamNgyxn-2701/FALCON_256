@@ -1,0 +1,5 @@
+sampler_calls=1024
+attempts=1767
+basesamp_calls=1767
+berexp_calls=1767
+berexp_random_bytes=1775

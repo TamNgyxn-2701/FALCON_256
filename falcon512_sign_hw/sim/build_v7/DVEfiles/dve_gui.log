@@ -1,0 +1,26 @@
+
+The file 'v7_wave.vpd' was opened successfully.
+dve> run
+Error: [UCLI-018] VCS Runtime Error
+The simulation is not active due to an error. Commands are not being accepted
+Use "start <toolname> <cmd-line-args>" to restart tool at the ucli prompt. If problem persists, please contact a synopsys representativeThe file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/sim/build_v7/v7_wave.vpd' was opened successfully.
+Loading db file '/home/eda/synopsys/vcs_vE-2011.03-3/gui/dve/libraries/syn/generic.sdb'
+3 drivers found for signal: tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start
+5 drivers found for signal: tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]
+1 driver found for signal: tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]
+12 drivers found for signal: tb_falcon512_sign_wrapper_v7.busy
+2 drivers found for signal: tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram_addr[8:0]
+Error: [EK-CMD-013]
+gui_list_action: No action supported for this item
+ Use error_info for more info.
+Error: [EK-CMD-013]
+gui_list_action: No action supported for this item
+ Use error_info for more info.3 drivers found for signal: tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.valid
+Error: [EK-CMD-013]
+[DVSG005] 
+Signal group 'ram_hm' cannot be renamed, because signal group 'ram_target' already exists.
+      Use error_info for more info.
+Error: [EK-CMD-013]
+[DVSG005] 
+Signal group 'ram_hm' cannot be renamed, because signal group 'ram_target' already exists.
+      Use error_info for more info.

@@ -1,0 +1,37 @@
+Command: ./build_fpr_inv/simv_fpr_inv -l build_fpr_inv/run_fpr_inv.log
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version E-2011.03-3; Runtime version E-2011.03-3;  Jul  2 20:44 2017
+========================================
+TEST fpr_inv FIXED Q32.48
+========================================
+---- 1 / 1.0 = 1.0 ----
+[PASS] fpr_inv result: 00000001000000000000
+[PASS] fpr_inv out_valid seen: 1
+---- 1 / 2.0 = 0.5 ----
+[PASS] fpr_inv result: 00000000800000000000
+[PASS] fpr_inv out_valid seen: 1
+---- 1 / 4.0 = 0.25 ----
+[PASS] fpr_inv result: 00000000400000000000
+[PASS] fpr_inv out_valid seen: 1
+---- 1 / 0.5 = 2.0 ----
+[PASS] fpr_inv result: 00000002000000000000
+[PASS] fpr_inv out_valid seen: 1
+---- 1 / -1.0 = -1.0 ----
+[PASS] fpr_inv result: ffffffff000000000000
+[PASS] fpr_inv out_valid seen: 1
+---- 1 / -2.0 = -0.5 ----
+[PASS] fpr_inv result: ffffffff800000000000
+[PASS] fpr_inv out_valid seen: 1
+---- 1 / 0 = MAX_POS ----
+[PASS] fpr_inv result: 7fffffffffffffffffff
+[PASS] fpr_inv out_valid seen: 1
+========================================
+FPR_INV FIXED Q32.48 TEST PASS
+========================================
+$finish called from file "../tb/tb_fpr_inv.v", line 193.
+$finish at simulation time              5930000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 5930000 ps
+CPU Time:      0.100 seconds;       Data structure size:   0.0Mb
+Sun Jul  2 20:44:19 2017

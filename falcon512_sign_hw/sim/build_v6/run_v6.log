@@ -1,0 +1,15 @@
+Command: ./simv -l run_v6.log
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version E-2011.03-3; Runtime version E-2011.03-3;  Jun 17 14:24 2017
+VCD+ Writer E-2011.03-3 Copyright (c) 1991-2011 by Synopsys Inc.
+norm final at index 511 = 574070
+FINAL NORM = 574070
+NORM OK    = 1
+VERSION 6 PASS: basis_count=512 gram_count=512 target_count=512 ff_count=512 sign_count=512 norm_count=512
+$finish called from file "/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/tb/tb_falcon512_sign_top_v6.v", line 210.
+$finish at simulation time             30945000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 30945000 ps
+CPU Time:      0.140 seconds;       Data structure size:   0.1Mb
+Sat Jun 17 14:24:33 2017

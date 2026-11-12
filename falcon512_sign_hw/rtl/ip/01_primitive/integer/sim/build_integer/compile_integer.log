@@ -1,0 +1,35 @@
+Command: vcs -debug +v2k -f list_integer.f ../tb/tb_integer.v -l build_integer/compile_integer.log \
+-o build_integer/simv_integer
+                         Chronologic VCS (TM)
+           Version E-2011.03-3 -- Tue Jul  4 09:55:35 2017
+               Copyright (c) 1991-2011 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '../int_add.v'
+Parsing design file '../int_sub.v'
+Parsing design file '../abs.v'
+Parsing design file '../square.v'
+Parsing design file '../accumulator.v'
+Parsing design file '../comparator.v'
+Parsing design file '../tb/tb_integer.v'
+Top Level Modules:
+       tb_integer
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+1 module and 0 UDP read.
+recompiling module tb_integer because:
+	This module or some inlined child module(s) has/have been modified.
+if [ -x ../build_integer/simv_integer ]; then chmod -x ../build_integer/simv_integer; \
+fi
+g++  -o ../build_integer/simv_integer -melf_i386   -Wl,-whole-archive    -Wl,-no-whole-archive \
+_vcsobj_1_1.o  5NrI_d.o 5NrIB_d.o SIM_l.o     rmapats_mop.o rmapats.o      /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libvirsim.so \
+/home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/librterrorinf.so /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libsnpsmalloc.so \
+/home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libvcsnew.so /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libuclinative.so \
+/home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/vcs_save_restore_new.o /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/ctype-stubs_32.a \
+-ldl -lm  -lc -lpthread -ldl 
+../build_integer/simv_integer up to date
+CPU time: .180 seconds to compile + .052 seconds to elab + .160 seconds to link

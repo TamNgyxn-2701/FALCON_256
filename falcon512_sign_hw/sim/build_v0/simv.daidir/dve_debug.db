@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<opml version="1.0">
+	<head>
+		<title>VCS dump file for DVE debugging</title>
+		<vcsVersion>E-2011.03-3</vcsVersion>
+		<dateCreated>Fri Jun 16 16:49:41 2017</dateCreated>
+	</head>
+	<body>
+		<!-- VCS compile options -->
+		<vcsCompileOptions text="/home/eda/synopsys/vcs_vE-2011.03-3/linux/bin/vcs1 -Mcc=gcc -Mcplusplus=g++ -Masflags= -Mcfl= -pipe -O -I/home/eda/synopsys/vcs_vE-2011.03-3/include  -Mldflags=-melf_i386  -Mout=simv -Mamsrun= -Mvcsaceobjs= -Mcmodrun= -Mobjects= /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libvirsim.so /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/librterrorinf.so /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libsnpsmalloc.so  -Msaverestoreobj=/home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/vcs_save_restore_new.o -Mcrt0= -Mcrtn= -Mcsrc= -Msyslibs=/home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/ctype-stubs_32.a -ldl -lm  -Xcbug=0x1 +v2k -l compile_v0.log -o simv -cm_xmldb +cli+4 +vcsd +itf+/home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/vcsd.tab +vpi -debug=3 +memcbk -sverilog +vpi -gen_obj -f ../listfile_v0.f "/>
+		<!-- File list for the whole design -->
+		<fileList>
+			<file fid="1" path="/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/common/falcon512_params.v" />
+			<file fid="2" path="/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/common/task_opcode.v" />
+			<file fid="3" path="/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/top/falcon512_sign_top.v" />
+			<file fid="0" path="/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ctrl/sign_main_ctrl.v" />
+			<file fid="4" path="/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/tb/tb_falcon512_sign_top.v" />
+		</fileList>
+		<!-- Include file list for the whole design -->
+		<includeFileList>
+			<incfile fid="3" lineno="2" includeID="1" />
+			<incfile fid="0" lineno="2" includeID="1" />
+			<incfile fid="0" lineno="3" includeID="2" />
+		</includeFileList>
+		<!-- Encrypted codes list for the whole design -->
+		<encryptedCodesList>
+		</encryptedCodesList>
+		<!-- Inactive codes list for the whole design -->
+		<inactiveCodesList>
+		</inactiveCodesList>
+		<!-- Compile options UUM based -->
+		<langKeywords>
+			<svFiles fid="0-4" />
+		</langKeywords>
+		<!--  Case insensitive file list -->
+		<caseInsensitiveFiles fid="" />
+		<!-- Macro definition list for the whole design --> 
+		<macroDefinitionList>
+			<macro name="TASK_IDLE" module="unnamed$$_1" sourceID="0" lineno="29" defID="2" defLine="4" value="1" />
+			<macro name="TASK_IDLE" module="unnamed$$_3" sourceID="0" lineno="38" defID="2" defLine="4" value="1" />
+			<macro name="TASK_LOAD_KEY" module="unnamed$$_4" sourceID="0" lineno="43" defID="2" defLine="5" value="2" />
+			<macro name="TASK_LOAD_KEY" module="unnamed$$_5" sourceID="0" lineno="52" defID="2" defLine="5" value="2" />
+			<macro name="TASK_LOAD_HM" module="unnamed$$_5" sourceID="0" lineno="53" defID="2" defLine="6" value="3" />
+			<macro name="TASK_BUILD_BASIS" module="unnamed$$_5" sourceID="0" lineno="54" defID="2" defLine="7" value="4" />
+			<macro name="TASK_GRAM" module="unnamed$$_5" sourceID="0" lineno="55" defID="2" defLine="8" value="5" />
+			<macro name="TASK_TARGET" module="unnamed$$_5" sourceID="0" lineno="56" defID="2" defLine="9" value="6" />
+			<macro name="TASK_FFSAMPLING" module="unnamed$$_5" sourceID="0" lineno="57" defID="2" defLine="10" value="7" />
+			<macro name="TASK_SIGN" module="unnamed$$_5" sourceID="0" lineno="58" defID="2" defLine="11" value="8" />
+			<macro name="TASK_NORM" module="unnamed$$_5" sourceID="0" lineno="59" defID="2" defLine="12" value="9" />
+			<macro name="TASK_DONE" module="unnamed$$_6" sourceID="0" lineno="61" defID="2" defLine="13" value="10" />
+			<macro name="TASK_DONE" module="unnamed$$_7" sourceID="0" lineno="70" defID="2" defLine="13" value="10" />
+		</macroDefinitionList>
+		<!-- Macro value list for the whole design --> 
+		<macroValueList>
+			<mv i="4" n="4&apos;d3" />
+			<mv i="5" n="4&apos;d4" />
+			<mv i="6" n="4&apos;d5" />
+			<mv i="7" n="4&apos;d6" />
+			<mv i="1" n="4&apos;d0" />
+			<mv i="8" n="4&apos;d7" />
+			<mv i="2" n="4&apos;d1" />
+			<mv i="9" n="4&apos;d8" />
+			<mv i="3" n="4&apos;d2" />
+			<mv i="10" n="4&apos;d9" />
+		</macroValueList>
+	</body>
+</opml>

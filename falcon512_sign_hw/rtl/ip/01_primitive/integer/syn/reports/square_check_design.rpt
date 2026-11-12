@@ -1,0 +1,3 @@
+Warning: In design 'square', cell 'B_9' does not drive any nets. (LINT-1)
+Warning: In design 'square', cell 'C2638' does not drive any nets. (LINT-1)
+1

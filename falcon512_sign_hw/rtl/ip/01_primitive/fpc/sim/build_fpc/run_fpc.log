@@ -1,0 +1,45 @@
+Command: ./build_fpc/simv_fpc -l build_fpc/run_fpc.log
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version E-2011.03-3; Runtime version E-2011.03-3;  Jul  2 19:47 2017
+========================================
+TEST FPC_ADD FIXED Q32.48
+========================================
+[PASS] FPC_ADD real 1+3=4: 00000004000000000000
+[PASS] FPC_ADD imag 2+4=6: 00000006000000000000
+[PASS] FPC_ADD real -1+3=2: 00000002000000000000
+[PASS] FPC_ADD imag 0.5-2=-1.5: fffffffe800000000000
+========================================
+TEST FPC_SUB FIXED Q32.48
+========================================
+[PASS] FPC_SUB real 5-2=3: 00000003000000000000
+[PASS] FPC_SUB imag 7-3=4: 00000004000000000000
+[PASS] FPC_SUB real 1-3=-2: fffffffe000000000000
+[PASS] FPC_SUB imag 0.5-1=-0.5: ffffffff800000000000
+========================================
+TEST FPC_MUL FIXED Q32.48
+========================================
+---- MUL integer values ----
+[PASS] FPC_MUL mult_valid: 1
+[PASS] FPC_MUL real: fffffffb000000000000
+[PASS] FPC_MUL imag: 0000000a000000000000
+[PASS] FPC_MUL valid drop: 0
+---- MUL fractional values ----
+[PASS] FPC_MUL mult_valid: 1
+[PASS] FPC_MUL real: 00000003800000000000
+[PASS] FPC_MUL imag: ffffffff800000000000
+[PASS] FPC_MUL valid drop: 0
+---- MUL signed values ----
+[PASS] FPC_MUL mult_valid: 1
+[PASS] FPC_MUL real: ffffffff000000000000
+[PASS] FPC_MUL imag: 00000007000000000000
+[PASS] FPC_MUL valid drop: 0
+========================================
+FPC FIXED Q32.48 PRIMITIVE TEST PASS
+========================================
+$finish called from file "../tb/tb_fpc.v", line 337.
+$finish at simulation time               106000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 106000 ps
+CPU Time:      0.110 seconds;       Data structure size:   0.0Mb
+Sun Jul  2 19:47:20 2017

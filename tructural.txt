@@ -1,0 +1,169 @@
+/home/ltk/FALCON/falcon512_sign_hw/
+│
+├── csrc/
+│
+├── docs/
+│
+├── golden/
+│   ├── software/
+│   │   ├── sign.c
+│   │   ├── fft.c
+│   │   ├── inner.h
+│   │   ├── fpr.c
+│   │   ├── fpr.h
+│   │   ├── bfu_trace.h
+│   │   ├── convert_trace.h
+│   │   ├── split_merge_trace.h
+│   │   ├── poly_trace.h
+│   │   ├── ldl_trace.h
+│   │   ├── sampler_trace.h
+│   │   └── ...
+│   │
+│   ├── unit/
+│   │   ├── fp64/
+│   │   │   ├── directed/
+│   │   │   └── trace/
+│   │   │
+│   │   ├── convert/
+│   │   │   ├── int2fpr/
+│   │   │   ├── fpr2int/
+│   │   │   └── trace/
+│   │   │
+│   │   ├── bfu/
+│   │   │   ├── directed/
+│   │   │   │   ├── fft/
+│   │   │   │   │   ├── x_re.memh
+│   │   │   │   │   ├── x_im.memh
+│   │   │   │   │   ├── y_re.memh
+│   │   │   │   │   ├── y_im.memh
+│   │   │   │   │   ├── w_re.memh
+│   │   │   │   │   ├── w_im.memh
+│   │   │   │   │   ├── out0_re.memh
+│   │   │   │   │   ├── out0_im.memh
+│   │   │   │   │   ├── out1_re.memh
+│   │   │   │   │   └── out1_im.memh
+│   │   │   │   │
+│   │   │   │   └── ifft/
+│   │   │   │       └── cùng 10 file .memh
+│   │   │   │
+│   │   │   └── trace/
+│   │   │       ├── fft/
+│   │   │       │   └── 10 file .memh
+│   │   │       ├── ifft/
+│   │   │       │   └── 10 file .memh
+│   │   │       ├── counts.txt
+│   │   │       ├── README.txt
+│   │   │       └── SHA256SUMS.txt
+│   │   │
+│   │   ├── split_merge/
+│   │   ├── poly/
+│   │   ├── ldl/
+│   │   ├── sampler/
+│   │   └── norm/
+│   │
+│   ├── vectors/
+│   ├── memh/
+│   ├── FINAL_STATUS.txt
+│   ├── FINAL_INVENTORY.txt
+│   └── GOLDEN_SHA256SUMS.txt
+│
+├── rtl/
+│   ├── arith/
+│   │   ├── fp64/
+│   │   │   ├── fp64_add.v
+│   │   │   ├── fp64_sub.v
+│   │   │   ├── fp64_mul.v
+│   │   │   ├── fp64_div.v
+│   │   │   ├── fp64_neg.v
+│   │   │   ├── fp64_sqr.v
+│   │   │   ├── fp64_sqrt.v
+│   │   │   ├── int2fpr.v
+│   │   │   └── fpr2int.v
+│   │   │
+│   │   ├── complex/
+│   │   │   └── complex_mul.v
+│   │   │
+│   │   └── bfu/
+│   │       └── bfu.v
+│   │
+│   ├── transform/
+│   │   ├── fft/
+│   │   ├── ifft/
+│   │   └── split_merge/
+│   │
+│   ├── poly/
+│   │
+│   ├── sampler/
+│   │   └── prng/
+│   │
+│   ├── mem/
+│   ├── ctrl/
+│   ├── top/
+│   ├── common/
+│   │
+│   └── ip/
+│       ├── 01_primitive/
+│       ├── 02_cell/
+│       ├── 03_stage/
+│       └── ...
+│
+├── tb/
+│   ├── unit/
+│   │   ├── arith/
+│   │   │   ├── tb_fp64_add.v
+│   │   │   ├── tb_fp64_add_trace.v
+│   │   │   ├── tb_fp64_sub.v
+│   │   │   ├── tb_fp64_sub_trace.v
+│   │   │   ├── tb_fp64_mul.v
+│   │   │   ├── tb_fp64_mul_trace.v
+│   │   │   ├── tb_fp64_div.v
+│   │   │   ├── tb_fp64_div_trace.v
+│   │   │   ├── tb_fp64_neg.v
+│   │   │   ├── tb_fp64_neg_trace.v
+│   │   │   ├── tb_fp64_sqr.v
+│   │   │   ├── tb_fp64_sqr_trace.v
+│   │   │   ├── tb_fp64_sqrt.v
+│   │   │   ├── tb_fp64_sqrt_trace.v
+│   │   │   ├── tb_int2fpr.v
+│   │   │   ├── tb_int2fpr_trace.v
+│   │   │   ├── tb_fpr2int.v
+│   │   │   ├── tb_fpr2int_trace.v
+│   │   │   └── tb_bfu_fft.v
+│   │   │
+│   │   ├── fft/
+│   │   ├── ifft/
+│   │   └── sampler/
+│   │
+│   ├── integration/
+│   ├── system/
+│   │
+│   ├── tb_falcon512_sign_top.v
+│   ├── tb_falcon512_sign_top_v1.v
+│   ├── tb_falcon512_sign_top_v2.v
+│   ├── ...
+│   └── tb_falcon512_sign_wrapper_v7.v
+│
+├── sim/
+│   ├── build_fp64_add/
+│   ├── build_fp64_sub/
+│   ├── build_fp64_mul/
+│   ├── build_fp64_div/
+│   ├── build_fp64_neg/
+│   ├── build_fp64_sqr/
+│   ├── build_fp64_sqrt/
+│   ├── build_int2fpr/
+│   ├── build_int2fpr_trace/
+│   ├── build_fpr2int/
+│   ├── build_fpr2int_trace/
+│   ├── build_bfu_fft/
+│   └── các build cũ khác
+│
+├── vectors/
+│   ├── input_key/
+│   └── input_hm/
+│
+├── falcon512_golden_final.tar.gz
+├── falcon512_golden_final.tar.gz.sha256
+├── old_folder.zip
+├── structural_folder.txt
+└── ucli.key

@@ -1,0 +1,5 @@
+QWarning: TextViewCtrl::x11_scroll(dx = -1027, dy = 0, w = -806, h = 108)
+QWarning: TextViewCtrl::x11_scroll(dx = -923, dy = 0, w = -702, h = 108)
+QWarning: TextViewCtrl::x11_scroll(dx = -897, dy = 0, w = -676, h = 108)
+QWarning: TextViewCtrl::x11_scroll(dx = -1079, dy = 0, w = -858, h = 108)
+QWarning: TextViewCtrl::x11_scroll(dx = -988, dy = 0, w = -767, h = 108)

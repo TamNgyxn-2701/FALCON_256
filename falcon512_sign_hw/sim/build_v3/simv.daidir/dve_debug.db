@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<opml version="1.0">
+	<head>
+		<title>VCS dump file for DVE debugging</title>
+		<vcsVersion>E-2011.03-3</vcsVersion>
+		<dateCreated>Sat Jun 17 09:20:08 2017</dateCreated>
+	</head>
+	<body>
+		<!-- VCS compile options -->
+		<vcsCompileOptions text="/home/eda/synopsys/vcs_vE-2011.03-3/linux/bin/vcs1 -Mcc=gcc -Mcplusplus=g++ -Masflags= -Mcfl= -pipe -O -I/home/eda/synopsys/vcs_vE-2011.03-3/include  -Mldflags=-melf_i386  -Mout=simv -Mamsrun= -Mvcsaceobjs= -Mcmodrun= -Mobjects= /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libvirsim.so /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/librterrorinf.so /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libsnpsmalloc.so  -Msaverestoreobj=/home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/vcs_save_restore_new.o -Mcrt0= -Mcrtn= -Mcsrc= -Msyslibs=/home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/ctype-stubs_32.a -ldl -lm  -Xcbug=0x1 +v2k -l compile_v3.log -o simv -cm_xmldb +cli+4 +vcsd +itf+/home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/vcsd.tab +vpi -debug=3 +memcbk -sverilog +vpi -gen_obj -f ../listfile_v3.f "/>
+		<!-- File list for the whole design -->
+		<fileList>
+			<file fid="6" path="/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ctrl/target_build_ctrl.v" />
+			<file fid="5" path="/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ctrl/gram_build_ctrl.v" />
+			<file fid="10" path="/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/tb/tb_falcon512_sign_top_v3.v" />
+			<file fid="8" path="/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/common/task_opcode.v" />
+			<file fid="9" path="/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/top/falcon512_sign_top.v" />
+			<file fid="4" path="/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ctrl/basis_build_ctrl.v" />
+			<file fid="3" path="/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/mem/basis_ram.v" />
+			<file fid="7" path="/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ctrl/sign_main_ctrl.v" />
+			<file fid="0" path="/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/mem/key_ram.v" />
+			<file fid="2" path="/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/mem/hm_ram.v" />
+			<file fid="1" path="/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/common/falcon512_params.v" />
+		</fileList>
+		<!-- Include file list for the whole design -->
+		<includeFileList>
+			<incfile fid="6" lineno="2" includeID="1" />
+			<incfile fid="5" lineno="2" includeID="1" />
+			<incfile fid="9" lineno="2" includeID="1" />
+			<incfile fid="4" lineno="2" includeID="1" />
+			<incfile fid="3" lineno="2" includeID="1" />
+			<incfile fid="7" lineno="2" includeID="1" />
+			<incfile fid="7" lineno="3" includeID="8" />
+			<incfile fid="0" lineno="2" includeID="1" />
+			<incfile fid="2" lineno="2" includeID="1" />
+		</includeFileList>
+		<!-- Encrypted codes list for the whole design -->
+		<encryptedCodesList>
+		</encryptedCodesList>
+		<!-- Inactive codes list for the whole design -->
+		<inactiveCodesList>
+		</inactiveCodesList>
+		<!-- Compile options UUM based -->
+		<langKeywords>
+			<svFiles fid="0-10" />
+		</langKeywords>
+		<!--  Case insensitive file list -->
+		<caseInsensitiveFiles fid="" />
+		<!-- Macro definition list for the whole design --> 
+		<macroDefinitionList>
+			<macro name="ADDR_W" module="target_build_ctrl" sourceID="6" lineno="13" defID="1" defLine="14" value="1" />
+			<macro name="ADDR_W" module="target_build_ctrl" sourceID="6" lineno="14" defID="1" defLine="14" value="1" />
+			<macro name="ADDR_W" module="target_build_ctrl" sourceID="6" lineno="15" defID="1" defLine="14" value="1" />
+			<macro name="COEFF_W" module="target_build_ctrl" sourceID="6" lineno="17" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="target_build_ctrl" sourceID="6" lineno="18" defID="1" defLine="9" value="2" />
+			<macro name="HM_W" module="target_build_ctrl" sourceID="6" lineno="19" defID="1" defLine="10" value="2" />
+			<macro name="TARGET_W" module="target_build_ctrl" sourceID="6" lineno="21" defID="1" defLine="13" value="3" />
+			<macro name="TARGET_W" module="target_build_ctrl" sourceID="6" lineno="22" defID="1" defLine="13" value="3" />
+			<macro name="ADDR_W" module="target_build_ctrl" sourceID="6" lineno="29" defID="1" defLine="14" value="1" />
+			<macro name="FALCON_Q" module="unnamed$$_5" sourceID="6" lineno="82" defID="1" defLine="6" value="4" />
+			<macro name="FALCON_Q" module="unnamed$$_5" sourceID="6" lineno="83" defID="1" defLine="6" value="4" />
+			<macro name="FALCON_N" module="unnamed$$_5" sourceID="6" lineno="85" defID="1" defLine="5" value="5" />
+			<macro name="ADDR_W" module="gram_build_ctrl" sourceID="5" lineno="13" defID="1" defLine="14" value="1" />
+			<macro name="ADDR_W" module="gram_build_ctrl" sourceID="5" lineno="14" defID="1" defLine="14" value="1" />
+			<macro name="COEFF_W" module="gram_build_ctrl" sourceID="5" lineno="16" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="gram_build_ctrl" sourceID="5" lineno="17" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="gram_build_ctrl" sourceID="5" lineno="18" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="gram_build_ctrl" sourceID="5" lineno="19" defID="1" defLine="9" value="2" />
+			<macro name="GRAM_W" module="gram_build_ctrl" sourceID="5" lineno="21" defID="1" defLine="12" value="3" />
+			<macro name="GRAM_W" module="gram_build_ctrl" sourceID="5" lineno="22" defID="1" defLine="12" value="3" />
+			<macro name="GRAM_W" module="gram_build_ctrl" sourceID="5" lineno="23" defID="1" defLine="12" value="3" />
+			<macro name="GRAM_W" module="gram_build_ctrl" sourceID="5" lineno="24" defID="1" defLine="12" value="3" />
+			<macro name="ADDR_W" module="gram_build_ctrl" sourceID="5" lineno="31" defID="1" defLine="14" value="1" />
+			<macro name="FALCON_N" module="unnamed$$_5" sourceID="5" lineno="73" defID="1" defLine="5" value="5" />
+			<macro name="ADDR_W" module="falcon512_sign_top" sourceID="9" lineno="15" defID="1" defLine="14" value="1" />
+			<macro name="COEFF_W" module="falcon512_sign_top" sourceID="9" lineno="16" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="falcon512_sign_top" sourceID="9" lineno="17" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="falcon512_sign_top" sourceID="9" lineno="18" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="falcon512_sign_top" sourceID="9" lineno="19" defID="1" defLine="9" value="2" />
+			<macro name="ADDR_W" module="falcon512_sign_top" sourceID="9" lineno="22" defID="1" defLine="14" value="1" />
+			<macro name="GRAM_W" module="falcon512_sign_top" sourceID="9" lineno="23" defID="1" defLine="12" value="3" />
+			<macro name="GRAM_W" module="falcon512_sign_top" sourceID="9" lineno="24" defID="1" defLine="12" value="3" />
+			<macro name="GRAM_W" module="falcon512_sign_top" sourceID="9" lineno="25" defID="1" defLine="12" value="3" />
+			<macro name="GRAM_W" module="falcon512_sign_top" sourceID="9" lineno="26" defID="1" defLine="12" value="3" />
+			<macro name="ADDR_W" module="falcon512_sign_top" sourceID="9" lineno="29" defID="1" defLine="14" value="1" />
+			<macro name="TARGET_W" module="falcon512_sign_top" sourceID="9" lineno="30" defID="1" defLine="13" value="3" />
+			<macro name="TARGET_W" module="falcon512_sign_top" sourceID="9" lineno="31" defID="1" defLine="13" value="3" />
+			<macro name="ADDR_W" module="falcon512_sign_top" sourceID="9" lineno="44" defID="1" defLine="14" value="1" />
+			<macro name="ADDR_W" module="falcon512_sign_top" sourceID="9" lineno="46" defID="1" defLine="14" value="1" />
+			<macro name="ADDR_W" module="falcon512_sign_top" sourceID="9" lineno="47" defID="1" defLine="14" value="1" />
+			<macro name="ADDR_W" module="falcon512_sign_top" sourceID="9" lineno="48" defID="1" defLine="14" value="1" />
+			<macro name="ADDR_W" module="falcon512_sign_top" sourceID="9" lineno="50" defID="1" defLine="14" value="1" />
+			<macro name="COEFF_W" module="falcon512_sign_top" sourceID="9" lineno="52" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="falcon512_sign_top" sourceID="9" lineno="53" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="falcon512_sign_top" sourceID="9" lineno="54" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="falcon512_sign_top" sourceID="9" lineno="55" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="falcon512_sign_top" sourceID="9" lineno="57" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="falcon512_sign_top" sourceID="9" lineno="58" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="falcon512_sign_top" sourceID="9" lineno="59" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="falcon512_sign_top" sourceID="9" lineno="60" defID="1" defLine="9" value="2" />
+			<macro name="HM_W" module="falcon512_sign_top" sourceID="9" lineno="62" defID="1" defLine="10" value="2" />
+			<macro name="ADDR_W" module="basis_build_ctrl" sourceID="4" lineno="13" defID="1" defLine="14" value="1" />
+			<macro name="COEFF_W" module="basis_build_ctrl" sourceID="4" lineno="15" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="basis_build_ctrl" sourceID="4" lineno="16" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="basis_build_ctrl" sourceID="4" lineno="17" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="basis_build_ctrl" sourceID="4" lineno="18" defID="1" defLine="9" value="2" />
+			<macro name="ADDR_W" module="basis_build_ctrl" sourceID="4" lineno="20" defID="1" defLine="14" value="1" />
+			<macro name="COEFF_W" module="basis_build_ctrl" sourceID="4" lineno="21" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="basis_build_ctrl" sourceID="4" lineno="22" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="basis_build_ctrl" sourceID="4" lineno="23" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="basis_build_ctrl" sourceID="4" lineno="24" defID="1" defLine="9" value="2" />
+			<macro name="ADDR_W" module="basis_build_ctrl" sourceID="4" lineno="31" defID="1" defLine="14" value="1" />
+			<macro name="FALCON_N" module="unnamed$$_5" sourceID="4" lineno="73" defID="1" defLine="5" value="5" />
+			<macro name="ADDR_W" module="basis_ram" sourceID="3" lineno="8" defID="1" defLine="14" value="1" />
+			<macro name="COEFF_W" module="basis_ram" sourceID="3" lineno="10" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="basis_ram" sourceID="3" lineno="11" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="basis_ram" sourceID="3" lineno="12" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="basis_ram" sourceID="3" lineno="13" defID="1" defLine="9" value="2" />
+			<macro name="ADDR_W" module="basis_ram" sourceID="3" lineno="15" defID="1" defLine="14" value="1" />
+			<macro name="COEFF_W" module="basis_ram" sourceID="3" lineno="17" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="basis_ram" sourceID="3" lineno="18" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="basis_ram" sourceID="3" lineno="19" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="basis_ram" sourceID="3" lineno="20" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="basis_ram" sourceID="3" lineno="23" defID="1" defLine="9" value="2" />
+			<macro name="FALCON_N" module="basis_ram" sourceID="3" lineno="23" defID="1" defLine="5" value="5" />
+			<macro name="COEFF_W" module="basis_ram" sourceID="3" lineno="24" defID="1" defLine="9" value="2" />
+			<macro name="FALCON_N" module="basis_ram" sourceID="3" lineno="24" defID="1" defLine="5" value="5" />
+			<macro name="COEFF_W" module="basis_ram" sourceID="3" lineno="25" defID="1" defLine="9" value="2" />
+			<macro name="FALCON_N" module="basis_ram" sourceID="3" lineno="25" defID="1" defLine="5" value="5" />
+			<macro name="COEFF_W" module="basis_ram" sourceID="3" lineno="26" defID="1" defLine="9" value="2" />
+			<macro name="FALCON_N" module="basis_ram" sourceID="3" lineno="26" defID="1" defLine="5" value="5" />
+			<macro name="TASK_IDLE" module="unnamed$$_1" sourceID="7" lineno="40" defID="8" defLine="4" value="6" />
+			<macro name="TASK_IDLE" module="unnamed$$_1" sourceID="7" lineno="47" defID="8" defLine="4" value="6" />
+			<macro name="TASK_IDLE" module="unnamed$$_3" sourceID="7" lineno="58" defID="8" defLine="4" value="6" />
+			<macro name="TASK_IDLE" module="unnamed$$_3" sourceID="7" lineno="59" defID="8" defLine="4" value="6" />
+			<macro name="TASK_LOAD_KEY" module="unnamed$$_4" sourceID="7" lineno="63" defID="8" defLine="5" value="7" />
+			<macro name="TASK_LOAD_KEY" module="unnamed$$_5" sourceID="7" lineno="70" defID="8" defLine="5" value="7" />
+			<macro name="TASK_LOAD_HM" module="unnamed$$_6" sourceID="7" lineno="76" defID="8" defLine="6" value="8" />
+			<macro name="TASK_BUILD_BASIS" module="unnamed$$_7" sourceID="7" lineno="83" defID="8" defLine="7" value="9" />
+			<macro name="TASK_GRAM" module="unnamed$$_9" sourceID="7" lineno="93" defID="8" defLine="8" value="10" />
+			<macro name="TASK_TARGET" module="unnamed$$_11" sourceID="7" lineno="103" defID="8" defLine="9" value="11" />
+			<macro name="TASK_FFSAMPLING" module="unnamed$$_12" sourceID="7" lineno="106" defID="8" defLine="10" value="12" />
+			<macro name="TASK_DONE" module="unnamed$$_13" sourceID="7" lineno="115" defID="8" defLine="13" value="13" />
+			<macro name="TASK_DONE" module="unnamed$$_16" sourceID="7" lineno="125" defID="8" defLine="13" value="13" />
+			<macro name="ADDR_W" module="key_ram" sourceID="0" lineno="5" defID="1" defLine="14" value="1" />
+			<macro name="COEFF_W" module="key_ram" sourceID="0" lineno="7" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="key_ram" sourceID="0" lineno="8" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="key_ram" sourceID="0" lineno="9" defID="1" defLine="9" value="2" />
+			<macro name="COEFF_W" module="key_ram" sourceID="0" lineno="10" defID="1" defLine="9" value="2" />
+			<macro name="FALCON_N" module="key_ram" sourceID="0" lineno="13" defID="1" defLine="5" value="5" />
+			<macro name="FALCON_N" module="key_ram" sourceID="0" lineno="14" defID="1" defLine="5" value="5" />
+			<macro name="FALCON_N" module="key_ram" sourceID="0" lineno="15" defID="1" defLine="5" value="5" />
+			<macro name="FALCON_N" module="key_ram" sourceID="0" lineno="16" defID="1" defLine="5" value="5" />
+			<macro name="ADDR_W" module="hm_ram" sourceID="2" lineno="5" defID="1" defLine="14" value="1" />
+			<macro name="HM_W" module="hm_ram" sourceID="2" lineno="6" defID="1" defLine="10" value="2" />
+			<macro name="HM_W" module="hm_ram" sourceID="2" lineno="9" defID="1" defLine="10" value="2" />
+			<macro name="FALCON_N" module="hm_ram" sourceID="2" lineno="9" defID="1" defLine="5" value="5" />
+		</macroDefinitionList>
+		<!-- Macro value list for the whole design --> 
+		<macroValueList>
+			<mv i="9" n="4&apos;d3" />
+			<mv i="1" n="9" />
+			<mv i="10" n="4&apos;d4" />
+			<mv i="11" n="4&apos;d5" />
+			<mv i="5" n="512" />
+			<mv i="12" n="4&apos;d6" />
+			<mv i="6" n="4&apos;d0" />
+			<mv i="2" n="16" />
+			<mv i="3" n="40" />
+			<mv i="7" n="4&apos;d1" />
+			<mv i="4" n="12289" />
+			<mv i="8" n="4&apos;d2" />
+			<mv i="13" n="4&apos;d9" />
+		</macroValueList>
+	</body>
+</opml>

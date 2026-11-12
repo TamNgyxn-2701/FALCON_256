@@ -1,0 +1,722 @@
+ 
+****************************************
+Report : cell
+Design : square
+Version: D-2010.03-SP4
+Date   : Tue Jul  4 09:56:36 2017
+****************************************
+
+Attributes:
+   BO - reference allows boundary optimization
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U419                      INVX0           saed90nm_typ    5.530000  
+U420                      INVX0           saed90nm_typ    5.530000  
+U421                      NOR2X0          saed90nm_typ    5.530000  
+U422                      NOR2X0          saed90nm_typ    5.530000  
+U423                      NOR2X0          saed90nm_typ    5.530000  
+U424                      AO21X1          saed90nm_typ    10.138000 
+U425                      NAND2X0         saed90nm_typ    5.443000  
+U426                      AND3X1          saed90nm_typ    8.294000  
+U427                      AND3X1          saed90nm_typ    8.294000  
+U428                      AND3X1          saed90nm_typ    8.294000  
+U429                      NOR2X0          saed90nm_typ    5.530000  
+U430                      NOR2X0          saed90nm_typ    5.530000  
+U431                      NOR2X0          saed90nm_typ    5.530000  
+U432                      INVX0           saed90nm_typ    5.530000  
+U433                      OA21X1          saed90nm_typ    9.216000  
+U434                      INVX0           saed90nm_typ    5.530000  
+U435                      NOR2X0          saed90nm_typ    5.530000  
+U436                      OR2X1           saed90nm_typ    7.373000  
+U437                      AO222X1         saed90nm_typ    14.746000 
+U438                      AO22X1          saed90nm_typ    11.981000 
+U439                      AO22X1          saed90nm_typ    11.981000 
+U440                      AO22X1          saed90nm_typ    11.981000 
+U441                      AO221X1         saed90nm_typ    12.902000 
+U442                      AO221X1         saed90nm_typ    12.902000 
+U443                      AO221X1         saed90nm_typ    12.902000 
+U444                      AO221X1         saed90nm_typ    12.902000 
+U445                      INVX0           saed90nm_typ    5.530000  
+U446                      INVX0           saed90nm_typ    5.530000  
+U447                      INVX0           saed90nm_typ    5.530000  
+U448                      INVX0           saed90nm_typ    5.530000  
+U449                      INVX0           saed90nm_typ    5.530000  
+U450                      INVX0           saed90nm_typ    5.530000  
+U451                      INVX0           saed90nm_typ    5.530000  
+U452                      INVX0           saed90nm_typ    5.530000  
+U453                      INVX0           saed90nm_typ    5.530000  
+U454                      INVX0           saed90nm_typ    5.530000  
+U455                      INVX0           saed90nm_typ    5.530000  
+U456                      INVX0           saed90nm_typ    5.530000  
+U457                      INVX0           saed90nm_typ    5.530000  
+U458                      INVX0           saed90nm_typ    5.530000  
+U459                      INVX0           saed90nm_typ    5.530000  
+U460                      INVX0           saed90nm_typ    5.530000  
+U461                      INVX0           saed90nm_typ    5.530000  
+U462                      INVX0           saed90nm_typ    5.530000  
+U463                      INVX0           saed90nm_typ    5.530000  
+U464                      INVX0           saed90nm_typ    5.530000  
+U465                      INVX0           saed90nm_typ    5.530000  
+U466                      INVX0           saed90nm_typ    5.530000  
+U467                      INVX0           saed90nm_typ    5.530000  
+U468                      INVX0           saed90nm_typ    5.530000  
+U469                      INVX0           saed90nm_typ    5.530000  
+U470                      INVX0           saed90nm_typ    5.530000  
+U471                      INVX0           saed90nm_typ    5.530000  
+U472                      INVX0           saed90nm_typ    5.530000  
+U473                      INVX0           saed90nm_typ    5.530000  
+U474                      INVX0           saed90nm_typ    5.530000  
+U475                      INVX0           saed90nm_typ    5.530000  
+U476                      AO22X1          saed90nm_typ    11.981000 
+U477                      AO22X1          saed90nm_typ    11.981000 
+U478                      AO22X1          saed90nm_typ    11.981000 
+U479                      AO22X1          saed90nm_typ    11.981000 
+U480                      AO22X1          saed90nm_typ    11.981000 
+U481                      AO22X1          saed90nm_typ    11.981000 
+U482                      AO22X1          saed90nm_typ    11.981000 
+U483                      AO22X1          saed90nm_typ    11.981000 
+U484                      AO22X1          saed90nm_typ    11.981000 
+U485                      AO22X1          saed90nm_typ    11.981000 
+U486                      AO22X1          saed90nm_typ    11.981000 
+U487                      AO22X1          saed90nm_typ    11.981000 
+U488                      AO22X1          saed90nm_typ    11.981000 
+U489                      AO22X1          saed90nm_typ    11.981000 
+U490                      AO22X1          saed90nm_typ    11.981000 
+U491                      AO22X1          saed90nm_typ    11.981000 
+U492                      AO22X1          saed90nm_typ    11.981000 
+U493                      AO22X1          saed90nm_typ    11.981000 
+U494                      AO22X1          saed90nm_typ    11.981000 
+U495                      AO22X1          saed90nm_typ    11.981000 
+U496                      AO22X1          saed90nm_typ    11.981000 
+U497                      AO22X1          saed90nm_typ    11.981000 
+U498                      AO22X1          saed90nm_typ    11.981000 
+U499                      AO22X1          saed90nm_typ    11.981000 
+U500                      AO22X1          saed90nm_typ    11.981000 
+U501                      AO221X1         saed90nm_typ    12.902000 
+U502                      AO221X1         saed90nm_typ    12.902000 
+U503                      AO221X1         saed90nm_typ    12.902000 
+U504                      AO221X1         saed90nm_typ    12.902000 
+U505                      AO221X1         saed90nm_typ    12.902000 
+U506                      AO221X1         saed90nm_typ    12.902000 
+U507                      AO221X1         saed90nm_typ    12.902000 
+U508                      AO221X1         saed90nm_typ    12.902000 
+U509                      AO221X1         saed90nm_typ    12.902000 
+U510                      AO221X1         saed90nm_typ    12.902000 
+U511                      AO221X1         saed90nm_typ    12.902000 
+U512                      AO221X1         saed90nm_typ    12.902000 
+U513                      AO221X1         saed90nm_typ    12.902000 
+U514                      AO221X1         saed90nm_typ    12.902000 
+U515                      AO221X1         saed90nm_typ    12.902000 
+U516                      AO221X1         saed90nm_typ    12.902000 
+U517                      ISOLANDX1       saed90nm_typ    7.373000  
+U518                      ISOLANDX1       saed90nm_typ    7.373000  
+U519                      ISOLANDX1       saed90nm_typ    7.373000  
+U520                      ISOLANDX1       saed90nm_typ    7.373000  
+U521                      ISOLANDX1       saed90nm_typ    7.373000  
+U522                      ISOLANDX1       saed90nm_typ    7.373000  
+U523                      ISOLANDX1       saed90nm_typ    7.373000  
+U524                      ISOLANDX1       saed90nm_typ    7.373000  
+U525                      ISOLANDX1       saed90nm_typ    7.373000  
+U526                      ISOLANDX1       saed90nm_typ    7.373000  
+U527                      ISOLANDX1       saed90nm_typ    7.373000  
+U528                      ISOLANDX1       saed90nm_typ    7.373000  
+U529                      ISOLANDX1       saed90nm_typ    7.373000  
+U530                      ISOLANDX1       saed90nm_typ    7.373000  
+U531                      ISOLANDX1       saed90nm_typ    7.373000  
+U532                      ISOLANDX1       saed90nm_typ    7.373000  
+U533                      ISOLANDX1       saed90nm_typ    7.373000  
+U534                      ISOLANDX1       saed90nm_typ    7.373000  
+U535                      ISOLANDX1       saed90nm_typ    7.373000  
+U536                      ISOLANDX1       saed90nm_typ    7.373000  
+U537                      ISOLANDX1       saed90nm_typ    7.373000  
+U538                      ISOLANDX1       saed90nm_typ    7.373000  
+U539                      ISOLANDX1       saed90nm_typ    7.373000  
+U540                      ISOLANDX1       saed90nm_typ    7.373000  
+U541                      ISOLANDX1       saed90nm_typ    7.373000  
+U542                      ISOLANDX1       saed90nm_typ    7.373000  
+U543                      ISOLANDX1       saed90nm_typ    7.373000  
+U544                      ISOLANDX1       saed90nm_typ    7.373000  
+U545                      ISOLANDX1       saed90nm_typ    7.373000  
+U546                      ISOLANDX1       saed90nm_typ    7.373000  
+U547                      ISOLANDX1       saed90nm_typ    7.373000  
+U548                      ISOLANDX1       saed90nm_typ    7.373000  
+U549                      ISOLANDX1       saed90nm_typ    7.373000  
+U550                      ISOLANDX1       saed90nm_typ    7.373000  
+U551                      ISOLANDX1       saed90nm_typ    7.373000  
+U552                      ISOLANDX1       saed90nm_typ    7.373000  
+U553                      ISOLANDX1       saed90nm_typ    7.373000  
+U554                      ISOLANDX1       saed90nm_typ    7.373000  
+U555                      ISOLANDX1       saed90nm_typ    7.373000  
+U556                      ISOLANDX1       saed90nm_typ    7.373000  
+U557                      ISOLANDX1       saed90nm_typ    7.373000  
+U558                      ISOLANDX1       saed90nm_typ    7.373000  
+U559                      ISOLANDX1       saed90nm_typ    7.373000  
+U560                      ISOLANDX1       saed90nm_typ    7.373000  
+U561                      ISOLANDX1       saed90nm_typ    7.373000  
+U562                      ISOLANDX1       saed90nm_typ    7.373000  
+U563                      ISOLANDX1       saed90nm_typ    7.373000  
+U564                      ISOLANDX1       saed90nm_typ    7.373000  
+U565                      ISOLANDX1       saed90nm_typ    7.373000  
+U566                      ISOLANDX1       saed90nm_typ    7.373000  
+U567                      ISOLANDX1       saed90nm_typ    7.373000  
+U568                      ISOLANDX1       saed90nm_typ    7.373000  
+U569                      ISOLANDX1       saed90nm_typ    7.373000  
+U570                      ISOLANDX1       saed90nm_typ    7.373000  
+U571                      ISOLANDX1       saed90nm_typ    7.373000  
+U572                      ISOLANDX1       saed90nm_typ    7.373000  
+U573                      ISOLANDX1       saed90nm_typ    7.373000  
+U574                      ISOLANDX1       saed90nm_typ    7.373000  
+U575                      ISOLANDX1       saed90nm_typ    7.373000  
+U576                      ISOLANDX1       saed90nm_typ    7.373000  
+U577                      ISOLANDX1       saed90nm_typ    7.373000  
+U578                      ISOLANDX1       saed90nm_typ    7.373000  
+U579                      ISOLANDX1       saed90nm_typ    7.373000  
+U580                      ISOLANDX1       saed90nm_typ    7.373000  
+U581                      AO22X1          saed90nm_typ    11.981000 
+U582                      AO22X1          saed90nm_typ    11.981000 
+U583                      AO22X1          saed90nm_typ    11.981000 
+U584                      AO22X1          saed90nm_typ    11.981000 
+U585                      AO22X1          saed90nm_typ    11.981000 
+U586                      AO22X1          saed90nm_typ    11.981000 
+U587                      AO22X1          saed90nm_typ    11.981000 
+U588                      AO22X1          saed90nm_typ    11.981000 
+U589                      AO22X1          saed90nm_typ    11.981000 
+U590                      AO22X1          saed90nm_typ    11.981000 
+U591                      AO22X1          saed90nm_typ    11.981000 
+U592                      AO22X1          saed90nm_typ    11.981000 
+U593                      AO22X1          saed90nm_typ    11.981000 
+U594                      AO22X1          saed90nm_typ    11.981000 
+U595                      AO22X1          saed90nm_typ    11.981000 
+U596                      AO22X1          saed90nm_typ    11.981000 
+U597                      AO22X1          saed90nm_typ    11.981000 
+U598                      AO22X1          saed90nm_typ    11.981000 
+U599                      AO22X1          saed90nm_typ    11.981000 
+U600                      AO22X1          saed90nm_typ    11.981000 
+U601                      AO22X1          saed90nm_typ    11.981000 
+U602                      AO22X1          saed90nm_typ    11.981000 
+U603                      AO22X1          saed90nm_typ    11.981000 
+U604                      AO22X1          saed90nm_typ    11.981000 
+U605                      AO22X1          saed90nm_typ    11.981000 
+U606                      AO22X1          saed90nm_typ    11.981000 
+U607                      AO22X1          saed90nm_typ    11.981000 
+U608                      AO22X1          saed90nm_typ    11.981000 
+U609                      AO22X1          saed90nm_typ    11.981000 
+U610                      AO22X1          saed90nm_typ    11.981000 
+U611                      AO22X1          saed90nm_typ    11.981000 
+U612                      AO22X1          saed90nm_typ    11.981000 
+U613                      AO22X1          saed90nm_typ    11.981000 
+U614                      AO221X1         saed90nm_typ    12.902000 
+U615                      AO221X1         saed90nm_typ    12.902000 
+U616                      AO221X1         saed90nm_typ    12.902000 
+U617                      AO221X1         saed90nm_typ    12.902000 
+U618                      AO221X1         saed90nm_typ    12.902000 
+U619                      AO221X1         saed90nm_typ    12.902000 
+U620                      AO221X1         saed90nm_typ    12.902000 
+U621                      AO221X1         saed90nm_typ    12.902000 
+U622                      AO221X1         saed90nm_typ    12.902000 
+U623                      AO221X1         saed90nm_typ    12.902000 
+U624                      AO221X1         saed90nm_typ    12.902000 
+U625                      AO221X1         saed90nm_typ    12.902000 
+U626                      AO221X1         saed90nm_typ    12.902000 
+U627                      AO221X1         saed90nm_typ    12.902000 
+U628                      AO221X1         saed90nm_typ    12.902000 
+U629                      AO221X1         saed90nm_typ    12.902000 
+U630                      AO22X1          saed90nm_typ    11.981000 
+U631                      AO22X1          saed90nm_typ    11.981000 
+U632                      AO22X1          saed90nm_typ    11.981000 
+U633                      AO22X1          saed90nm_typ    11.981000 
+U634                      AO22X1          saed90nm_typ    11.981000 
+U635                      AO22X1          saed90nm_typ    11.981000 
+U636                      AO22X1          saed90nm_typ    11.981000 
+U637                      AO22X1          saed90nm_typ    11.981000 
+U638                      AO22X1          saed90nm_typ    11.981000 
+U639                      AO22X1          saed90nm_typ    11.981000 
+U640                      AO22X1          saed90nm_typ    11.981000 
+U641                      AO22X1          saed90nm_typ    11.981000 
+U642                      AO22X1          saed90nm_typ    11.981000 
+U643                      AO22X1          saed90nm_typ    11.981000 
+U644                      AO22X1          saed90nm_typ    11.981000 
+U645                      AO22X1          saed90nm_typ    11.981000 
+U646                      AO22X1          saed90nm_typ    11.981000 
+U647                      AO22X1          saed90nm_typ    11.981000 
+U648                      AO22X1          saed90nm_typ    11.981000 
+U649                      AO22X1          saed90nm_typ    11.981000 
+U650                      AO22X1          saed90nm_typ    11.981000 
+U651                      AO22X1          saed90nm_typ    11.981000 
+U652                      AO22X1          saed90nm_typ    11.981000 
+U653                      AO22X1          saed90nm_typ    11.981000 
+U654                      AO22X1          saed90nm_typ    11.981000 
+U655                      AO22X1          saed90nm_typ    11.981000 
+U656                      AO22X1          saed90nm_typ    11.981000 
+U657                      AO22X1          saed90nm_typ    11.981000 
+U658                      AO22X1          saed90nm_typ    11.981000 
+U659                      AO22X1          saed90nm_typ    11.981000 
+U660                      AO22X1          saed90nm_typ    11.981000 
+U661                      AO22X1          saed90nm_typ    11.981000 
+U662                      AO221X1         saed90nm_typ    12.902000 
+U663                      AO221X1         saed90nm_typ    12.902000 
+U664                      AO221X1         saed90nm_typ    12.902000 
+U665                      AO221X1         saed90nm_typ    12.902000 
+U666                      AO221X1         saed90nm_typ    12.902000 
+U667                      AO221X1         saed90nm_typ    12.902000 
+U668                      AO221X1         saed90nm_typ    12.902000 
+U669                      AO221X1         saed90nm_typ    12.902000 
+U670                      AO221X1         saed90nm_typ    12.902000 
+U671                      AO221X1         saed90nm_typ    12.902000 
+U672                      AO221X1         saed90nm_typ    12.902000 
+U673                      AO221X1         saed90nm_typ    12.902000 
+U674                      AO221X1         saed90nm_typ    12.902000 
+U675                      AO221X1         saed90nm_typ    12.902000 
+U676                      AO221X1         saed90nm_typ    12.902000 
+U677                      AO221X1         saed90nm_typ    12.902000 
+U678                      NAND2X0         saed90nm_typ    5.443000  
+U679                      NAND4X0         saed90nm_typ    8.294000  
+U680                      AND2X1          saed90nm_typ    7.445000  
+U681                      NOR4X0          saed90nm_typ    9.216000  
+U682                      NAND3X0         saed90nm_typ    7.373000  
+U683                      AO22X1          saed90nm_typ    11.981000 
+U684                      INVX0           saed90nm_typ    5.530000  
+U685                      NAND2X0         saed90nm_typ    5.443000  
+U686                      AND3X1          saed90nm_typ    8.294000  
+U687                      AND3X1          saed90nm_typ    8.294000  
+U688                      AND3X1          saed90nm_typ    8.294000  
+U689                      AO22X1          saed90nm_typ    11.981000 
+U690                      AO22X1          saed90nm_typ    11.981000 
+U691                      AO22X1          saed90nm_typ    11.981000 
+U692                      AO22X1          saed90nm_typ    11.981000 
+U693                      AO22X1          saed90nm_typ    11.981000 
+U694                      AO22X1          saed90nm_typ    11.981000 
+U695                      AO22X1          saed90nm_typ    11.981000 
+U696                      AO22X1          saed90nm_typ    11.981000 
+U697                      AO22X1          saed90nm_typ    11.981000 
+U698                      AO22X1          saed90nm_typ    11.981000 
+U699                      AO22X1          saed90nm_typ    11.981000 
+U700                      AO22X1          saed90nm_typ    11.981000 
+U701                      AO22X1          saed90nm_typ    11.981000 
+U702                      AO22X1          saed90nm_typ    11.981000 
+U703                      AO22X1          saed90nm_typ    11.981000 
+U704                      AO22X1          saed90nm_typ    11.981000 
+U705                      AO22X1          saed90nm_typ    11.981000 
+U706                      AO22X1          saed90nm_typ    11.981000 
+U707                      AO22X1          saed90nm_typ    11.981000 
+U708                      AO22X1          saed90nm_typ    11.981000 
+U709                      AO22X1          saed90nm_typ    11.981000 
+U710                      AO22X1          saed90nm_typ    11.981000 
+U711                      AO22X1          saed90nm_typ    11.981000 
+U712                      AO22X1          saed90nm_typ    11.981000 
+U713                      AO22X1          saed90nm_typ    11.981000 
+U714                      AO22X1          saed90nm_typ    11.981000 
+U715                      AO22X1          saed90nm_typ    11.981000 
+U716                      AO22X1          saed90nm_typ    11.981000 
+U717                      AO22X1          saed90nm_typ    11.981000 
+U718                      AO22X1          saed90nm_typ    11.981000 
+U719                      AO22X1          saed90nm_typ    11.981000 
+U720                      AO22X1          saed90nm_typ    11.981000 
+U721                      AO22X1          saed90nm_typ    11.981000 
+U722                      AO22X1          saed90nm_typ    11.981000 
+U723                      AO22X1          saed90nm_typ    11.981000 
+U724                      AO22X1          saed90nm_typ    11.981000 
+U725                      AO22X1          saed90nm_typ    11.981000 
+U726                      AO22X1          saed90nm_typ    11.981000 
+U727                      AO22X1          saed90nm_typ    11.981000 
+U728                      AO22X1          saed90nm_typ    11.981000 
+U729                      AO22X1          saed90nm_typ    11.981000 
+U730                      AO22X1          saed90nm_typ    11.981000 
+U731                      AO22X1          saed90nm_typ    11.981000 
+U732                      AO22X1          saed90nm_typ    11.981000 
+U733                      AO22X1          saed90nm_typ    11.981000 
+U734                      AO22X1          saed90nm_typ    11.981000 
+U735                      AO22X1          saed90nm_typ    11.981000 
+U736                      AO22X1          saed90nm_typ    11.981000 
+U737                      AO22X1          saed90nm_typ    11.981000 
+U738                      AO22X1          saed90nm_typ    11.981000 
+U739                      AO22X1          saed90nm_typ    11.981000 
+U740                      AO22X1          saed90nm_typ    11.981000 
+U741                      AO22X1          saed90nm_typ    11.981000 
+U742                      AO22X1          saed90nm_typ    11.981000 
+U743                      AO22X1          saed90nm_typ    11.981000 
+U744                      AO22X1          saed90nm_typ    11.981000 
+U745                      AO22X1          saed90nm_typ    11.981000 
+U746                      AO22X1          saed90nm_typ    11.981000 
+U747                      AO22X1          saed90nm_typ    11.981000 
+U748                      AO22X1          saed90nm_typ    11.981000 
+U749                      AO22X1          saed90nm_typ    11.981000 
+U750                      AO22X1          saed90nm_typ    11.981000 
+U751                      AO22X1          saed90nm_typ    11.981000 
+U752                      AO22X1          saed90nm_typ    11.981000 
+U753                      AO22X1          saed90nm_typ    11.981000 
+U754                      AO22X1          saed90nm_typ    11.981000 
+U755                      AO22X1          saed90nm_typ    11.981000 
+U756                      AO22X1          saed90nm_typ    11.981000 
+U757                      AO22X1          saed90nm_typ    11.981000 
+U758                      AO22X1          saed90nm_typ    11.981000 
+U759                      AO22X1          saed90nm_typ    11.981000 
+U760                      AO22X1          saed90nm_typ    11.981000 
+U761                      AO22X1          saed90nm_typ    11.981000 
+U762                      AO22X1          saed90nm_typ    11.981000 
+U763                      AO22X1          saed90nm_typ    11.981000 
+U764                      AO22X1          saed90nm_typ    11.981000 
+U765                      AO22X1          saed90nm_typ    11.981000 
+U766                      AO22X1          saed90nm_typ    11.981000 
+U767                      AO22X1          saed90nm_typ    11.981000 
+U768                      AO22X1          saed90nm_typ    11.981000 
+U769                      AO22X1          saed90nm_typ    11.981000 
+U770                      AO22X1          saed90nm_typ    11.981000 
+U771                      AO22X1          saed90nm_typ    11.981000 
+U772                      AO22X1          saed90nm_typ    11.981000 
+U773                      AO22X1          saed90nm_typ    11.981000 
+U774                      AO22X1          saed90nm_typ    11.981000 
+U775                      AO22X1          saed90nm_typ    11.981000 
+U776                      AO22X1          saed90nm_typ    11.981000 
+U777                      AO22X1          saed90nm_typ    11.981000 
+U778                      AO22X1          saed90nm_typ    11.981000 
+U779                      AO22X1          saed90nm_typ    11.981000 
+U780                      AO22X1          saed90nm_typ    11.981000 
+U781                      AO22X1          saed90nm_typ    11.981000 
+U782                      AO22X1          saed90nm_typ    11.981000 
+U783                      AO22X1          saed90nm_typ    11.981000 
+U784                      AO22X1          saed90nm_typ    11.981000 
+U785                      AO22X1          saed90nm_typ    11.981000 
+U786                      AO22X1          saed90nm_typ    11.981000 
+U787                      AO22X1          saed90nm_typ    11.981000 
+U788                      AO22X1          saed90nm_typ    11.981000 
+U789                      AO22X1          saed90nm_typ    11.981000 
+U790                      AO22X1          saed90nm_typ    11.981000 
+U791                      AO22X1          saed90nm_typ    11.981000 
+U792                      AO22X1          saed90nm_typ    11.981000 
+U793                      AO22X1          saed90nm_typ    11.981000 
+U794                      AO22X1          saed90nm_typ    11.981000 
+U795                      AO22X1          saed90nm_typ    11.981000 
+U796                      AO221X1         saed90nm_typ    12.902000 
+U797                      AO221X1         saed90nm_typ    12.902000 
+U798                      AO221X1         saed90nm_typ    12.902000 
+U799                      AO221X1         saed90nm_typ    12.902000 
+U800                      AO221X1         saed90nm_typ    12.902000 
+U801                      AO221X1         saed90nm_typ    12.902000 
+U802                      AO221X1         saed90nm_typ    12.902000 
+U803                      AO221X1         saed90nm_typ    12.902000 
+U804                      AO221X1         saed90nm_typ    12.902000 
+U805                      NOR2X0          saed90nm_typ    5.530000  
+U806                      AO21X1          saed90nm_typ    10.138000 
+U807                      INVX0           saed90nm_typ    5.530000  
+U808                      NOR2X0          saed90nm_typ    5.530000  
+U809                      AO22X1          saed90nm_typ    11.981000 
+U810                      AO22X1          saed90nm_typ    11.981000 
+U811                      AO22X1          saed90nm_typ    11.981000 
+U812                      AO22X1          saed90nm_typ    11.981000 
+U813                      AO22X1          saed90nm_typ    11.981000 
+U814                      AO22X1          saed90nm_typ    11.981000 
+U815                      AO22X1          saed90nm_typ    11.981000 
+U816                      AO22X1          saed90nm_typ    11.981000 
+U817                      AO22X1          saed90nm_typ    11.981000 
+U818                      AO22X1          saed90nm_typ    11.981000 
+U819                      AO22X1          saed90nm_typ    11.981000 
+U820                      AO22X1          saed90nm_typ    11.981000 
+U821                      AO22X1          saed90nm_typ    11.981000 
+U822                      AO22X1          saed90nm_typ    11.981000 
+U823                      AO22X1          saed90nm_typ    11.981000 
+U824                      AO22X1          saed90nm_typ    11.981000 
+U825                      AO22X1          saed90nm_typ    11.981000 
+U826                      AO22X1          saed90nm_typ    11.981000 
+U827                      AO22X1          saed90nm_typ    11.981000 
+U828                      AO22X1          saed90nm_typ    11.981000 
+U829                      AO22X1          saed90nm_typ    11.981000 
+U830                      AO22X1          saed90nm_typ    11.981000 
+U831                      AO22X1          saed90nm_typ    11.981000 
+U832                      AO22X1          saed90nm_typ    11.981000 
+U833                      AO22X1          saed90nm_typ    11.981000 
+U834                      AO22X1          saed90nm_typ    11.981000 
+U835                      AO22X1          saed90nm_typ    11.981000 
+U836                      AO22X1          saed90nm_typ    11.981000 
+U837                      AO22X1          saed90nm_typ    11.981000 
+U838                      AO22X1          saed90nm_typ    11.981000 
+U839                      AO22X1          saed90nm_typ    11.981000 
+U840                      AO22X1          saed90nm_typ    11.981000 
+U841                      AO22X1          saed90nm_typ    11.981000 
+U842                      NOR2X0          saed90nm_typ    5.530000  
+acc_reg[0]                DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[1]                DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[2]                DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[3]                DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[4]                DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[5]                DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[6]                DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[7]                DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[8]                DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[9]                DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[10]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[11]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[12]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[13]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[14]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[15]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[16]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[17]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[18]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[19]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[20]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[21]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[22]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[23]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[24]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[25]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[26]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[27]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[28]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[29]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[30]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[31]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[32]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[33]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[34]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[35]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[36]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[37]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[38]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[39]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[40]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[41]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[42]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[43]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[44]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[45]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[46]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[47]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[48]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[49]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[50]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[51]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[52]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[53]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[54]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[55]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[56]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[57]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[58]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[59]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[60]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[61]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[62]               DFFARX1         saed90nm_typ    32.256001 n
+acc_reg[63]               DFFARX1         saed90nm_typ    32.256001 n
+add_1_root_add_85_2       square_DW01_add_0               936.338976
+                                                                    BO, h
+add_64                    square_DW01_inc_1               489.363995
+                                                                    BO, h
+add_83                    square_DW01_add_1               935.489976
+                                                                    BO, h
+add_144                   square_DW01_inc_0               113.355999
+                                                                    BO, h
+busy_reg                  DFFARX1         saed90nm_typ    32.256001 n
+carry_reg_reg             DFFARX1         saed90nm_typ    32.256001 n
+count_reg[0]              DFFARX1         saed90nm_typ    32.256001 n
+count_reg[1]              DFFARX1         saed90nm_typ    32.256001 n
+count_reg[2]              DFFARX1         saed90nm_typ    32.256001 n
+count_reg[3]              DFFARX1         saed90nm_typ    32.256001 n
+count_reg[4]              DFFARX1         saed90nm_typ    32.256001 n
+count_reg[5]              DFFARX1         saed90nm_typ    32.256001 n
+count_reg[6]              DFFARX1         saed90nm_typ    32.256001 n
+count_reg[7]              DFFARX1         saed90nm_typ    32.256001 n
+done_reg                  DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[0]        DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[1]        DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[2]        DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[3]        DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[4]        DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[5]        DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[6]        DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[7]        DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[8]        DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[9]        DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[10]       DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[11]       DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[12]       DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[13]       DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[14]       DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[15]       DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[16]       DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[17]       DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[18]       DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[19]       DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[20]       DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[21]       DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[22]       DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[23]       DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[24]       DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[25]       DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[26]       DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[27]       DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[28]       DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[29]       DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[30]       DFFARX1         saed90nm_typ    32.256001 n
+low_sum_reg_reg[31]       DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[0]       DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[1]       DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[2]       DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[3]       DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[4]       DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[5]       DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[6]       DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[7]       DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[8]       DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[9]       DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[10]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[11]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[12]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[13]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[14]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[15]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[16]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[17]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[18]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[19]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[20]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[21]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[22]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[23]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[24]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[25]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[26]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[27]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[28]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[29]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[30]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[31]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[32]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[33]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[34]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[35]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[36]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[37]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[38]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[39]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[40]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[41]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[42]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[43]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[44]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[45]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[46]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[47]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[48]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[49]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[50]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[51]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[52]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[53]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[54]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[55]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[56]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[57]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[58]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[59]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[60]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[61]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[62]      DFFARX1         saed90nm_typ    32.256001 n
+multiplicand_reg[63]      DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[0]         DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[1]         DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[2]         DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[3]         DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[4]         DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[5]         DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[6]         DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[7]         DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[8]         DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[9]         DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[10]        DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[11]        DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[12]        DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[13]        DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[14]        DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[15]        DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[16]        DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[17]        DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[18]        DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[19]        DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[20]        DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[21]        DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[22]        DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[23]        DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[24]        DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[25]        DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[26]        DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[27]        DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[28]        DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[29]        DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[30]        DFFARX1         saed90nm_typ    32.256001 n
+multiplier_reg[31]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[0]         DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[1]         DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[2]         DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[3]         DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[4]         DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[5]         DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[6]         DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[7]         DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[8]         DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[9]         DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[10]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[11]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[12]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[13]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[14]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[15]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[16]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[17]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[18]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[19]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[20]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[21]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[22]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[23]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[24]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[25]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[26]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[27]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[28]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[29]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[30]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[31]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[32]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[33]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[34]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[35]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[36]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[37]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[38]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[39]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[40]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[41]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[42]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[43]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[44]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[45]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[46]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[47]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[48]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[49]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[50]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[51]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[52]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[53]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[54]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[55]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[56]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[57]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[58]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[59]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[60]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[61]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[62]        DFFARX1         saed90nm_typ    32.256001 n
+square_out_reg[63]        DFFARX1         saed90nm_typ    32.256001 n
+state_reg[0]              DFFARX1         saed90nm_typ    32.256001 n
+state_reg[1]              DFFARX1         saed90nm_typ    32.256001 n
+--------------------------------------------------------------------------------
+Total 697 cells                                           15623.803115
+1

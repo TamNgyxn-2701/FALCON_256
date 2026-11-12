@@ -1,0 +1,138 @@
+16       
+0 falcon512_params.v
+0 falcon512_params.v
+0 falcon512_params.v
+0 falcon512_params.v
+0 falcon512_params.v
+0 falcon512_params.v
+0 falcon512_params.v
+0 falcon512_params.v
+0 falcon512_params.v
+0 falcon512_params.v
+0 falcon512_params.v
+0 falcon512_params.v
+0 falcon512_params.v
+0 task_opcode.v
+0 falcon512_params.v
+0 falcon512_params.v
+32
++cli+4
++itf+/home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/vcsd.tab
++memcbk
++v2k
++vcsd
++vpi
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -O -I/home/eda/synopsys/vcs_vE-2011.03-3/include
+-Mcmodrun=
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mldflags=-melf_i386
+-Mobjects= /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libvirsim.so /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/librterrorinf.so /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libsnpsmalloc.so
+-Mout=build_v7/simv
+-Msaverestoreobj=/home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/vcs_save_restore_new.o
+-Msyslibs=/home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/ctype-stubs_32.a -ldl -lm
+-Mvcsaceobjs=
+-Xcbug=0x1
+-cm_xmldb
+-debug=3
+-f listfile_v7.f
+-gen_obj
+-l
+-o build_v7/simv
+-sverilog
+/home/eda/synopsys/vcs_vE-2011.03-3/linux/bin/vcs1
+build_v7/compile_v7.log
+60
+XNLSPATH=/home/eda/synopsys/hercules_vB-2008.09-SP3//lib-u/X11/nls
+XKEYSYMDB=/home/eda/synopsys/hercules_vB-2008.09-SP3//lib-u/X11/XKeysymDB
+XDG_SESSION_COOKIE=7e32a723550dcc7727de1d620000000b-1507269593.843783-1809659464
+XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share/:/usr/share/
+XDG_CONFIG_DIRS=/etc/xdg/xdg-gnome:/etc/xdg
+XAUTHORITY=/var/run/gdm/auth-for-ltk-znHQLQ/database
+WINDOWPATH=7
+VMR_MODE_FLAG=32
+VCS_MX_HOME_INTERNAL=1
+VCS_LOG_FILE=build_v7/compile_v7.log
+VCS_HOME=/home/eda/synopsys/vcs_vE-2011.03-3
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux
+VCS_AMD_PURE32=1
+USERNAME=ltk
+UNAME=/bin/uname
+UBUNTU_MENUPROXY=libappmenu.so
+TOOL_HOME=/home/eda/synopsys/vcs_vE-2011.03-3/linux
+TECH_DIR=/home/eda/pdk
+SYNOPSYS_SYSTYPE=IA.32
+SYNOPSYS=/home/eda/synopsys
+SSH_AUTH_SOCK=/tmp/keyring-70RoN4/ssh
+SSH_AGENT_PID=1105
+SESSION_MANAGER=local/virtualpc:@/tmp/.ICE-unix/968,unix/virtualpc:/tmp/.ICE-unix/968
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+PYTHONPATH=/home/eda/synopsys/ciranova/pylib:/home/eda/synopsys/ciranova/plat_linux_gcc411_32/pyext:/home/eda/synopsys/ciranova/plat_linux_gcc411_32/lib:.:
+PYTHONHOME=/home/eda/synopsys/ciranova/plat_linux_gcc411_32/3rd
+OVA_UUM=0
+ORBIT_SOCKETDIR=/tmp/orbit-ltk
+OA_PLUGIN_PATH=/home/eda/synopsys/ciranova/plat_linux_gcc411_32/3rd/oa/data/plugins:/home/eda/synopsys/ciranova/quickstart:
+OA_HOME=/home/eda/cadence/ic614.hotfix/oa_v22.04.073
+OA_COMPILER=gcc411
+MOZILLA_HOME=/usr/bin/netscape
+MMSIM_ROOT=/home/eda/cadence/mmsim61
+MGLS_LICENSE_FILE=/home/eda/mentor/calibre2009/calibre.lic
+MGC_HOME=/home/eda/mentor/calibre2009/ixl_cal_2009.1_46.27
+MANDATORY_PATH=/usr/share/gconf/gnome.mandatory.path
+LESSOPEN=| /usr/bin/lesspipe %s
+LESSCLOSE=/usr/bin/lesspipe %s %s
+LEDA_PATH=/home/eda/synopsys/leda
+HERCULES_HOME_DIR=/home/eda/synopsys/hercules_vB-2008.09-SP3/
+GTK_MODULES=canberra-gtk-module
+GNOME_KEYRING_CONTROL=/tmp/keyring-70RoN4
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GDM_LANG=en_US
+GDM_KEYBOARD_LAYOUT=us
+GDMSESSION=gnome
+DESKTOP_SESSION=gnome
+DEFAULTS_PATH=/usr/share/gconf/gnome.default.path
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-tCIbCLTNlx,guid=25755ad92758796dea9349d50000001f
+COMPIZ_CONFIG_PROFILE=ubuntu
+COLORTERM=gnome-terminal
+CNI_ROOT=/home/eda/synopsys/ciranova
+CNI_LOG_DEFAULT=/dev/null
+CDS_Netlisting_Mode=Analog
+CDS_LIC_FILE=5280@virtualpc
+CDSHOME=/home/eda/cadence/ic614.hotfix
+ASSURA_ROOT=/home/eda/cadence/ASSURA317
+0
+20
+1781613942 ../rtl/common/task_opcode.v
+1497683064 ../rtl/common/falcon512_params.v
+1497685120 ../tb/tb_falcon512_sign_wrapper_v7.v
+1497685060 ../rtl/top/falcon512_sign_wrapper_v7.v
+1497683531 ../rtl/top/falcon512_sign_top.v
+1497683473 ../rtl/ctrl/sign_main_ctrl.v
+1497684268 ../rtl/ctrl/norm_check_ctrl.v
+1497681902 ../rtl/ctrl/sign_compute_ctrl.v
+1497674965 ../rtl/ctrl/ff_sampling_ctrl.v
+1497665730 ../rtl/ctrl/target_build_ctrl.v
+1497620141 ../rtl/ctrl/gram_build_ctrl.v
+1497609874 ../rtl/ctrl/basis_build_ctrl.v
+1497683199 ../rtl/mem/signature_ram.v
+1497681894 ../rtl/mem/sample_ram.v
+1497674902 ../rtl/mem/target_ram.v
+1497619286 ../rtl/mem/basis_ram.v
+1497665549 ../rtl/mem/hm_ram.v
+1497608775 ../rtl/mem/key_ram.v
+1507276341 listfile_v7.f
+1309233543 /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/vcsd.tab
+4
+0 
+1309234138 /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libvirsim.so
+1309233689 /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/librterrorinf.so
+1309233651 /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libsnpsmalloc.so

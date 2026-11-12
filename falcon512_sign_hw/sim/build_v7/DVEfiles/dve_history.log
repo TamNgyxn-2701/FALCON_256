@@ -1,0 +1,1588 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file v6_wave.vpd} {gui_open_db -file v4_wave.vpd} {gui_open_db -file v1_wave.vpd} {gui_open_db -file inter.vpd} {gui_open_db -file /home/ltk/ASIC_TEST/vcs/counter.vpd -design V1}}
+gui_set_state_value -category Layout -key child_console_size_x -value 1026
+gui_set_state_value -category Layout -key child_console_size_y -value 130
+gui_set_state_value -category Layout -key child_data_size_x -value 137
+gui_set_state_value -category Layout -key child_data_size_y -value 290
+gui_set_state_value -category Layout -key child_driver_size_x -value 1046
+gui_set_state_value -category Layout -key child_driver_size_y -value 179
+gui_set_state_value -category Layout -key child_hier_size_x -value 137
+gui_set_state_value -category Layout -key child_hier_size_y -value 290
+gui_set_state_value -category Layout -key child_list_down -value 140
+gui_set_state_value -category Layout -key child_list_right -value 443
+gui_set_state_value -category Layout -key child_schematic_docknewline -value false
+gui_set_state_value -category Layout -key child_schematic_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_schematic_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_schematic_size_x -value 1024
+gui_set_state_value -category Layout -key child_schematic_size_y -value 299
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 755
+gui_set_state_value -category Layout -key child_source_size_y -value 285
+gui_set_state_value -category Layout -key child_watch_size_x -value 1305
+gui_set_state_value -category Layout -key child_watch_size_y -value 105
+gui_set_state_value -category Layout -key child_wave_colname -value 267
+gui_set_state_value -category Layout -key child_wave_colvalue -value 267
+gui_set_state_value -category Layout -key child_wave_docknewline -value false
+gui_set_state_value -category Layout -key child_wave_left -value 539
+gui_set_state_value -category Layout -key child_wave_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_wave_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_wave_right -value 1314
+gui_set_state_value -category Layout -key child_wave_size_x -value 1310
+gui_set_state_value -category Layout -key child_wave_size_y -value 366
+gui_set_state_value -category Layout -key main_pos_x -value 88
+gui_set_state_value -category Layout -key main_pos_y -value 269
+gui_set_state_value -category Layout -key main_size_x -value 1114
+gui_set_state_value -category Layout -key main_size_y -value 822
+gui_set_state_value -category Layout -key stand_list_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_list_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_list_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_list_child_size_x -value 603
+gui_set_state_value -category Layout -key stand_list_child_size_y -value 285
+gui_set_state_value -category Layout -key stand_list_top_pos_x -value 528
+gui_set_state_value -category Layout -key stand_list_top_pos_y -value 92
+gui_set_state_value -category Layout -key stand_list_top_size_x -value 1126
+gui_set_state_value -category Layout -key stand_list_top_size_y -value 590
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1863
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 757
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 12
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 53
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1870
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 922
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_create_state_key -category SearchDialog -key MatchCase -value_type bool -value false
+gui_create_state_key -category SearchDialog -key MatchWord -value_type bool -value true
+gui_create_state_key -category SearchDialog -key SearchMode -value_type string -value Wildcards
+gui_create_state_key -category SearchDialog -key UseCombo -value_type bool -value true
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value {counter.vpd inter.vpd}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_argsCombo} -value_type string -value {{-ucligui }}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value /home/ltk/ASIC_TEST/vcs
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {/home/ltk/ASIC_TEST/vcs/simv simv}
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_db   -file  v7_wave.vpd
+run
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.final_valid_seen   }
+gui_list_select_all -id Data.1
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { tb_falcon512_sign_wrapper_v7.clk tb_falcon512_sign_wrapper_v7.rst_n tb_falcon512_sign_wrapper_v7.start tb_falcon512_sign_wrapper_v7.busy tb_falcon512_sign_wrapper_v7.done tb_falcon512_sign_wrapper_v7.fail {tb_falcon512_sign_wrapper_v7.phase[3:0]} tb_falcon512_sign_wrapper_v7.accept tb_falcon512_sign_wrapper_v7.retry tb_falcon512_sign_wrapper_v7.final_valid {tb_falcon512_sign_wrapper_v7.retry_count[3:0]} tb_falcon512_sign_wrapper_v7.basis_valid {tb_falcon512_sign_wrapper_v7.basis_addr[8:0]} {tb_falcon512_sign_wrapper_v7.basis_b00[15:0]} {tb_falcon512_sign_wrapper_v7.basis_b01[15:0]} {tb_falcon512_sign_wrapper_v7.basis_b10[15:0]} {tb_falcon512_sign_wrapper_v7.basis_b11[15:0]} tb_falcon512_sign_wrapper_v7.gram_valid {tb_falcon512_sign_wrapper_v7.gram_addr[8:0]} {tb_falcon512_sign_wrapper_v7.gram00[39:0]} {tb_falcon512_sign_wrapper_v7.gram01[39:0]} {tb_falcon512_sign_wrapper_v7.gram10[39:0]} {tb_falcon512_sign_wrapper_v7.gram11[39:0]} tb_falcon512_sign_wrapper_v7.target_valid {tb_falcon512_sign_wrapper_v7.target_addr[8:0]} {tb_falcon512_sign_wrapper_v7.target_t0[39:0]} {tb_falcon512_sign_wrapper_v7.target_t1[39:0]} tb_falcon512_sign_wrapper_v7.ff_valid {tb_falcon512_sign_wrapper_v7.ff_addr[8:0]} {tb_falcon512_sign_wrapper_v7.sample_z0[39:0]} {tb_falcon512_sign_wrapper_v7.sample_z1[39:0]} tb_falcon512_sign_wrapper_v7.sign_valid {tb_falcon512_sign_wrapper_v7.sign_addr[8:0]} {tb_falcon512_sign_wrapper_v7.sig_s0[63:0]} {tb_falcon512_sign_wrapper_v7.sig_s1[63:0]} tb_falcon512_sign_wrapper_v7.norm_valid {tb_falcon512_sign_wrapper_v7.norm_addr[8:0]} {tb_falcon512_sign_wrapper_v7.norm_value[127:0]} tb_falcon512_sign_wrapper_v7.norm_ok {tb_falcon512_sign_wrapper_v7.basis_count[31:0]} {tb_falcon512_sign_wrapper_v7.gram_count[31:0]} {tb_falcon512_sign_wrapper_v7.target_count[31:0]} {tb_falcon512_sign_wrapper_v7.ff_count[31:0]} {tb_falcon512_sign_wrapper_v7.sign_count[31:0]} {tb_falcon512_sign_wrapper_v7.norm_count[31:0]} {tb_falcon512_sign_wrapper_v7.sign_csv[31:0]} {tb_falcon512_sign_wrapper_v7.norm_csv[31:0]} {tb_falcon512_sign_wrapper_v7.result_csv[31:0]} tb_falcon512_sign_wrapper_v7.final_valid_seen } -insertionbar
+gui_wv_scroll_hslidermove -id  Wave.1 192
+gui_zoom -window Wave.1 -full
+gui_close_window -window TopLevel.2
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.accept   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.basis_count[31:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.target_count[31:0]}   }
+gui_list_expand -id  Data.1   {tb_falcon512_sign_wrapper_v7.basis_count[31:0]}
+gui_list_collapse -id  Data.1   {tb_falcon512_sign_wrapper_v7.basis_count[31:0]}
+gui_list_expand -id  Data.1   {tb_falcon512_sign_wrapper_v7.gram_addr[8:0]}
+gui_list_collapse -id  Data.1   {tb_falcon512_sign_wrapper_v7.gram_addr[8:0]}
+gui_list_expand -id  Data.1   {tb_falcon512_sign_wrapper_v7.gram_addr[8:0]}
+gui_list_collapse -id  Data.1   {tb_falcon512_sign_wrapper_v7.gram_addr[8:0]}
+gui_list_expand -id  Hier.1   tb_falcon512_sign_wrapper_v7
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut   }
+gui_list_expand -id  Hier.1   tb_falcon512_sign_wrapper_v7.dut
+gui_list_expand -id  Hier.1   tb_falcon512_sign_wrapper_v7.dut.u_core
+gui_list_collapse -id  Hier.1   tb_falcon512_sign_wrapper_v7.dut.u_core
+gui_list_expand -id  Hier.1   tb_falcon512_sign_wrapper_v7.dut.u_core
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_hm_ram   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core   }
+gui_list_select -id Hier.1 -selected  {  }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Hier.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram } -insertionbar
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_mem[0:511][7:0]}  {New Group}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.F_mem[0:511][7:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.g_mem[0:511][7:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_mem[0:511][7:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.F_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.g_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}   }
+gui_list_select -id Wave.1 -selected  {  }
+gui_marker_move -id  Wave.1 C1 18
+gui_marker_select -id  Wave.1 { C1 }
+gui_marker_move -id  Wave.1 C1 15
+gui_marker_move -id  Wave.1 C1 18
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.phase[3:0]}   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.clk  tb_falcon512_sign_wrapper_v7.dut.u_core.rst_n  tb_falcon512_sign_wrapper_v7.dut.u_core.start  tb_falcon512_sign_wrapper_v7.dut.u_core.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.done  tb_falcon512_sign_wrapper_v7.dut.u_core.fail  {tb_falcon512_sign_wrapper_v7.dut.u_core.phase[3:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.clk tb_falcon512_sign_wrapper_v7.dut.u_core.rst_n tb_falcon512_sign_wrapper_v7.dut.u_core.start tb_falcon512_sign_wrapper_v7.dut.u_core.busy tb_falcon512_sign_wrapper_v7.dut.u_core.done tb_falcon512_sign_wrapper_v7.dut.u_core.fail {tb_falcon512_sign_wrapper_v7.dut.u_core.phase[3:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.clk   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.clk  tb_falcon512_sign_wrapper_v7.dut.u_core.rst_n  tb_falcon512_sign_wrapper_v7.dut.u_core.start  tb_falcon512_sign_wrapper_v7.dut.u_core.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.done  tb_falcon512_sign_wrapper_v7.dut.u_core.fail  {tb_falcon512_sign_wrapper_v7.dut.u_core.phase[3:0]}   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after u_key_ram {{tb_falcon512_sign_wrapper_v7.dut.u_core.clk} {tb_falcon512_sign_wrapper_v7.dut.u_core.rst_n} {tb_falcon512_sign_wrapper_v7.dut.u_core.start} {tb_falcon512_sign_wrapper_v7.dut.u_core.busy} {tb_falcon512_sign_wrapper_v7.dut.u_core.done} {tb_falcon512_sign_wrapper_v7.dut.u_core.fail} {tb_falcon512_sign_wrapper_v7.dut.u_core.phase[3:0]}}
+gui_marker_move -id  Wave.1 C1 159
+gui_zoom -window Wave.1 -full
+gui_marker_move -id  Wave.1 C1 6346473
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scroll_hslidermove -id  Wave.1 17971
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_marker_move -id  Wave.1 C1 76337
+gui_marker_move -id  Wave.1 C1 85000
+gui_marker_move -id  Wave.1 C1 95000
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.rst_n   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.start   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.phase[3:0]}   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after tb_falcon512_sign_wrapper_v7.dut.u_core.start {{tb_falcon512_sign_wrapper_v7.dut.u_core.phase[3:0]}} 
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.done   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.fail   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.done   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.fail   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]}  tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start   }
+gui_list_add -id Wave.1 -from Data.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]} } -insertionbar
+gui_list_add -id Wave.1 -from Data.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.busy   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after tb_falcon512_sign_wrapper_v7.dut.u_core.busy {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start}} 
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]}   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]}} 
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.g_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.F_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_mem[0:511][7:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.g_mem[0:511][7:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.F_mem[0:511][7:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_mem[0:511][7:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]}   }
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]}   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after tb_falcon512_sign_wrapper_v7.dut.u_core.busy {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]}} 
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.start   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.busy   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.busy  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]}   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.busy  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]}  tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid   }
+gui_list_add -id Wave.1 -from Data.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.start tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.busy tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]} {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start}} 
+gui_list_select -id Wave.1 -selected  { {New Group}   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]}   }
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.busy   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.start   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.busy   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]}   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.g_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.F_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.g_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.F_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.g_q[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.F_q[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]} } -insertionbar
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl   }
+gui_list_collapse -id  Hier.1   tb_falcon512_sign_wrapper_v7
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7   }
+gui_list_expand -id  Hier.1   tb_falcon512_sign_wrapper_v7
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.basis_addr[8:0]}   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.basis_addr[8:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.basis_addr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b00[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b01[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b10[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b11[15:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.basis_addr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b00[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b01[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b10[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b11[15:0]} } -insertionbar
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.basis_valid   }
+gui_list_add -id Wave.1 -from Data.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.basis_valid } -insertionbar
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.basis_valid   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.basis_addr[8:0]} {{tb_falcon512_sign_wrapper_v7.dut.u_core.basis_valid}} 
+gui_list_select -id Wave.1 -selected  {  }
+gui_marker_move -id  Wave.1 C1 49769
+gui_wv_scroll_hslidermove -id  Wave.1 8330
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid   }
+gui_marker_move -id  Wave.1 C1 56131
+gui_marker_move -id  Wave.1 C1 172134
+gui_wv_scroll_hslidermove -id  Wave.1 9969
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix decimal
+gui_wv_scroll_hslidermove -id  Wave.1 3804
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix decimal
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix decimal
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_zoom -window Wave.1 -factor 2
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.basis_addr[8:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix decimal
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.basis_valid   }
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.basis_addr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.basis_valid   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b00[15:0]}   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.basis_valid   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.basis_addr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.basis_valid   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]}   }
+gui_marker_move -id  Wave.1 C1 70351
+gui_marker_move -id  Wave.1 C1 65486
+gui_marker_move -id  Wave.1 C1 33679
+gui_marker_move -id  Wave.1 C1 81203
+gui_marker_move -id  Wave.1 C1 83074
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.phase[3:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.phase[3:0]}   }
+gui_marker_move -id  Wave.1 C1 46402
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.busy   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.busy   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.busy   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.busy   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.start   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.busy   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.F_q[15:0]}   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.done   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.done  tb_falcon512_sign_wrapper_v7.dut.u_core.fail   }
+gui_list_add -id Wave.1 -from Data.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.done tb_falcon512_sign_wrapper_v7.dut.u_core.fail } -insertionbar
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.done   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.done  tb_falcon512_sign_wrapper_v7.dut.u_core.fail   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after tb_falcon512_sign_wrapper_v7.dut.u_core.busy {{tb_falcon512_sign_wrapper_v7.dut.u_core.done} {tb_falcon512_sign_wrapper_v7.dut.u_core.fail}} 
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.fail   }
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]}   }
+gui_list_select -id Wave.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.g_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.F_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.basis_addr[8:0]}  tb_falcon512_sign_wrapper_v7.dut.u_core.basis_valid  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b00[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b01[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b10[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b11[15:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.fail   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl   }
+gui_data_toggle_value_annotate -id  Data.1   {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start}
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl   }
+gui_data_toggle_value_annotate -id  Data.1   {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_done}
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_done   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start   }
+gui_save_session -reload -default_file
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]}  tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start   }
+gui_list_add -id Wave.1 -from Data.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]}   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after tb_falcon512_sign_wrapper_v7.dut.u_core.fail {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]}} 
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.basis_addr[8:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]}  tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid   }
+gui_list_add -id Wave.1 -from Data.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]} } -insertionbar
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.g_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.F_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.g_q[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.F_q[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start   }
+gui_list_action -id  Wave.1 tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start
+gui_get_drivers -id Wave.1 -signal tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.norm_done   }
+gui_list_select -id DriverLoad.1 -selected  { {/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ctrl/sign_main_ctrl.v 66 0.1}   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.norm_ok   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.ff_start   }
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]} {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start}} 
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]}   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]}} 
+gui_list_select -id Wave.1 -selected  {  }
+gui_wv_zoom_timerange -id  Wave.1 0 547837
+gui_wv_zoom_timerange -id  Wave.1 0 557941
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]} {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid}} 
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]} {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}} 
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}   }
+gui_list_action -id  Wave.1 {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}
+gui_get_drivers -id Wave.1 -signal {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}} 
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {New Group}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]}   }
+gui_list_action -id  Wave.1 {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]}
+gui_get_drivers -id Wave.1 -signal {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]}
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.phase[3:0]}   }
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_marker_move -id  Wave.1 C1 72035
+gui_marker_move -id  Wave.1 C1 79051
+gui_marker_move -id  Wave.1 C1 75000
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]}   }
+gui_marker_move -id  Wave.1 C1 72690
+gui_marker_move -id  Wave.1 C1 76993
+gui_marker_move -id  Wave.1 C1 70070
+gui_marker_move -id  Wave.1 C1 72971
+gui_marker_move -id  Wave.1 C1 77087
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid   }
+gui_marker_move -id  Wave.1 C1 98417
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start   }
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.target_start   }
+gui_list_add -id Wave.1 -from Data.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.target_start } -insertionbar
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]}  tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.g_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.F_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.target_start   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_hm_ram   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_hm_ram.hm_q[15:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_hm_ram.hm_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_hm_ram.raddr[8:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_hm_ram.raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_hm_ram.hm_q[15:0]} } -insertionbar
+gui_marker_move -id  Wave.1 C1 88874
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 2
+gui_wv_zoom_timerange -id  Wave.1 44344 336975
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram   }
+gui_list_add -id Wave.1 -from Hier.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram } -insertionbar
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b00[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b01[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b10[15:0]}   }
+gui_marker_move -id  Wave.1 C1 105340
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.we   }
+gui_marker_move -id  Wave.1 C1 105000
+gui_wv_scroll_hslidermove -id  Wave.1 3
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 234
+gui_view_port_history -window Wave.1 -previous
+gui_view_port_history -window Wave.1 -next
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_marker_move -id  Wave.1 C1 108167
+gui_marker_move -id  Wave.1 C1 165000
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.start   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.basis_start   }
+gui_list_select -id Wave.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.target_start  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_hm_ram.raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_hm_ram.hm_q[15:0]}  tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.clk  tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.we  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.waddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.w_b00[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.w_b01[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.w_b10[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.w_b11[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b00[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b01[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b10[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b11[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.mem_b00[0:511][15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.mem_b01[0:511][15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.mem_b10[0:511][15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.mem_b11[0:511][15:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]}   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.start   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.phase[3:0]}   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.done   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.fail   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_main_ctrl.state[3:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.busy   }
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.busy   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.start   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.busy   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid  tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.done   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid  tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.done  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]}   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid  tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.done  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.basis_addr[8:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.start tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.busy tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.done tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.basis_addr[8:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.start   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after {tb_falcon512_sign_wrapper_v7.dut.u_core.phase[3:0]} {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.start}} 
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.busy   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after {tb_falcon512_sign_wrapper_v7.dut.u_core.phase[3:0]} {{tb_falcon512_sign_wrapper_v7.dut.u_core.busy}} 
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.start   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.busy {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid}} 
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.raddr[8:0]}   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_hm_ram   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram   }
+gui_list_select -id Data.1 -selected  {  }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.g_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.F_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.g_q[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.F_q[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.g_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.F_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]}   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.basis_addr[8:0]} {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.g_q[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.F_q[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]}} 
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b00[15:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b00[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b01[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b10[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b11[15:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b00[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b01[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b10[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b11[15:0]} } -insertionbar
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 234
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 2
+gui_wv_scroll_hslidermove -id  Wave.1 240
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_marker_move -id  Wave.1 C1 140769
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.start   }
+gui_marker_move -id  Wave.1 C1 95000
+gui_marker_move -id  Wave.1 C1 95000
+gui_marker_move -id  Wave.1 C1 98564
+gui_marker_move -id  Wave.1 C1 105000
+gui_marker_move -id  Wave.1 C1 102607
+gui_marker_move -id  Wave.1 C1 114485
+gui_marker_move -id  Wave.1 C1 122320
+gui_marker_move -id  Wave.1 C1 108925
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b00[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b00[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b00[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]}   }
+gui_marker_move -id  Wave.1 C1 126869
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.w_b11[15:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.w_b00[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.w_b01[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.w_b10[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.w_b11[15:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.w_b00[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.w_b01[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.w_b10[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.w_b11[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.waddr[8:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.waddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.w_b00[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.w_b01[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.w_b10[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.w_b11[15:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b00[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.w_b00[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.waddr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.waddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.w_b00[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.w_b01[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.w_b10[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.w_b11[15:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b11[15:0]}   }
+gui_marker_move -id  Wave.1 C1 110442
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]} {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}} 
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.basis_addr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.basis_addr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b00[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b00[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b00[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.g_q[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b00[15:0]}   }
+gui_marker_move -id  Wave.1 C1 115000
+gui_marker_move -id  Wave.1 C1 115000
+gui_marker_move -id  Wave.1 C1 110694
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b00[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.g_q[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.g_q[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.g_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b00[15:0]}   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid   }
+gui_marker_move -id  Wave.1 C1 105000
+gui_marker_move -id  Wave.1 C1 115000
+gui_marker_move -id  Wave.1 C1 115000
+gui_marker_move -id  Wave.1 C1 105000
+gui_marker_move -id  Wave.1 C1 108420
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.g_q[15:0]}   }
+gui_marker_move -id  Wave.1 C1 125000
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.f_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.g_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.F_q[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]}   }
+gui_marker_move -id  Wave.1 C1 145000
+gui_wv_scroll_hslidermove -id  Wave.1 19268
+gui_marker_move -id  Wave.1 C1 4914782
+gui_marker_move -id  Wave.1 C1 4951174
+gui_wv_scroll_hslidermove -id  Wave.1 20307
+gui_marker_move -id  Wave.1 C1 5171805
+gui_marker_move -id  Wave.1 C1 5215000
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.busy   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.valid   }
+gui_marker_move -id  Wave.1 C1 5206934
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.done   }
+gui_marker_move -id  Wave.1 C1 5242063
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.basis_addr[8:0]}   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.G_q[15:0]} {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.basis_addr[8:0]}} 
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b00[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.basis_addr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.b00[15:0]}   }
+gui_list_select -id Wave.1 -selected  {  }
+gui_marker_move -id  Wave.1 C1 5267841
+gui_wv_scroll_hslidermove -id  Wave.1 320
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.basis_addr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.key_addr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_key_ram.raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_build_ctrl.basis_addr[8:0]}   }
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select_all -id Wave.1
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { u_key_ram   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.clk   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.clk  tb_falcon512_sign_wrapper_v7.rst_n   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.clk  tb_falcon512_sign_wrapper_v7.rst_n  {tb_falcon512_sign_wrapper_v7.phase[3:0]}   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.clk  tb_falcon512_sign_wrapper_v7.rst_n  {tb_falcon512_sign_wrapper_v7.phase[3:0]}  tb_falcon512_sign_wrapper_v7.busy   }
+gui_list_add -id Wave.1 -from Data.1 { tb_falcon512_sign_wrapper_v7.clk tb_falcon512_sign_wrapper_v7.rst_n tb_falcon512_sign_wrapper_v7.busy {tb_falcon512_sign_wrapper_v7.phase[3:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.phase[3:0]}   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after tb_falcon512_sign_wrapper_v7.rst_n {{tb_falcon512_sign_wrapper_v7.phase[3:0]}} 
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.busy   }
+gui_list_action -id  Wave.1 tb_falcon512_sign_wrapper_v7.busy
+gui_get_drivers -id Wave.1 -signal tb_falcon512_sign_wrapper_v7.busy
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.start   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.busy   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.valid   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.valid  tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.done   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.valid  tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.done  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.basis_raddr[8:0]}   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.valid  tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.done  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.basis_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram_addr[8:0]}   }
+gui_open_window List
+gui_lst_add -id List.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.start tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.busy tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.done tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.valid {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.basis_raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram_addr[8:0]} }
+gui_close_window -window TopLevel.3
+gui_list_add -id Wave.1 -from Data.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.start tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.busy tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.done tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.valid {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.basis_raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram_addr[8:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.valid   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.busy {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.valid}} 
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram_addr[8:0]}   }
+gui_list_action -id  Wave.1 {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram_addr[8:0]}
+gui_get_drivers -id Wave.1 -signal {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram_addr[8:0]}
+gui_list_select -id Wave.1 -selected  {  }
+gui_sg_create  Group3 
+gui_list_add_group -id  Wave.1   {Group3} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group3 {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram_addr[8:0]}}
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.basis_raddr[8:0]} {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram_addr[8:0]}} 
+gui_list_select -id Wave.1 -selected  { {New Group}   }
+gui_list_select -id Wave.1 -selected  { Group3   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { u_key_ram   }
+gui_sg_rename  u_key_ram   signal
+gui_list_select -id Wave.1 -selected  { {New Group}   }
+gui_list_action -id  Wave.1 {New Group}
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.start   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.valid  tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.done  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.basis_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram_addr[8:0]}   }
+gui_sg_create  Group4 
+gui_list_add_group -id  Wave.1   {Group4} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group4 {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.start} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.busy} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.valid} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.done} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.basis_raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram_addr[8:0]}}
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { Group4   }
+gui_sg_rename  Group4   gram_build
+gui_sg_rename  gram_build   gram_build_ctrl
+gui_list_select -id Wave.1 -selected  { {New Group}   }
+gui_list_action -id  Wave.1 {New Group}
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.raddr[8:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b00[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b01[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b10[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b11[15:0]}   }
+gui_open_window Group TopLevel.1
+gui_sg_addsignal -group Group5 {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b00[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b01[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b10[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b11[15:0]}}
+gui_close_window -window Group.1
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b00[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b01[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b10[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b11[15:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.raddr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b00[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b01[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b10[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b11[15:0]}   }
+gui_sg_create  Group6 
+gui_list_add_group -id  Wave.1   {Group6} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group6 {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b00[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b01[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b10[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b11[15:0]}}
+gui_list_select -id Wave.1 -selected  { Group6   }
+gui_sg_rename  Group6   basis_ram
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram00[39:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram00[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram01[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram10[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram11[39:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram00[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram01[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram10[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram11[39:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram00[39:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram00[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram01[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram10[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram11[39:0]}   }
+gui_sg_create  Group7 
+gui_list_add_group -id  Wave.1   {Group7} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group7 {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram00[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram01[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram10[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram11[39:0]}}
+gui_list_select -id Wave.1 -selected  { Group7   }
+gui_sg_rename  Group7   vector_gram
+gui_marker_move -id  Wave.1 C1 5148554
+gui_zoom -window Wave.1 -factor 2
+gui_wv_scroll_hslidermove -id  Wave.1 40928
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scroll_hslidermove -id  Wave.1 47963
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.basis_raddr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.basis_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram_addr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.basis_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram_addr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.raddr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.basis_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.gram_addr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.phase[3:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix decimal
+gui_wv_scroll_hslidermove -id  Wave.1 42047
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_marker_move -id  Wave.1 C1 5305511
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_gram_build_ctrl.basis_raddr[8:0]}   }
+gui_list_select -id Wave.1 -selected  {  }
+gui_marker_move -id  Wave.1 C1 5291485
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_marker_move -id  Wave.1 C1 1504227
+gui_marker_move -id  Wave.1 C1 784463
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_wv_scroll_hslidermove -id  Wave.1 9957
+gui_marker_move -id  Wave.1 C1 5263285
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_view_port_history -window Wave.1 -previous
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scroll_hslidermove -id  Wave.1 81377
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_list_select -id Wave.1 -selected  { gram_build_ctrl   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.start   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.busy   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.done   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.done  tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.valid   }
+gui_list_add -id Wave.1 -from Data.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.start tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.busy tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.done tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.valid } -insertionbar
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.start   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.done  tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.valid   }
+gui_sg_create  Group8 
+gui_list_add_group -id  Wave.1   {Group8} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group8 {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.start} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.busy} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.done} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.valid}}
+gui_list_select -id Wave.1 -selected  { Group8   }
+gui_sg_rename  Group8   target_buld_ctrl
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after tb_falcon512_sign_wrapper_v7.busy {target_buld_ctrl} 
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.start   }
+gui_list_select -id Wave.1 -selected  { target_buld_ctrl   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.valid   }
+gui_list_action -id  Wave.1 tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.valid
+gui_get_drivers -id Wave.1 -signal tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.valid
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.hm_raddr[8:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.hm_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.basis_raddr[8:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.hm_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.basis_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_addr[8:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.basis_raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.hm_raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_addr[8:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  { basis_ram   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { vector_gram   }
+gui_delete_selected -id  Wave.1
+gui_list_sort -id  Hier.1   {Type}
+gui_list_sort -id  Hier.1   -descending  {Type}
+gui_list_sort -id  Hier.1   {Type}
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_hm_ram   }
+gui_list_select -id Data.1 -selected  {  }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_hm_ram.hm_q[15:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_hm_ram.hm_q[15:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  { {New Group}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_hm_ram.hm_q[15:0]}   }
+gui_sg_create  Group9 
+gui_list_add_group -id  Wave.1   {Group9} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group9 {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_hm_ram.hm_q[15:0]}}
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b01[15:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b01[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b11[15:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b01[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b11[15:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b01[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b01[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b11[15:0]}   }
+gui_sg_create  Group10 
+gui_list_add_group -id  Wave.1   {Group10} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group10 {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b01[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b11[15:0]}}
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t1[39:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t1[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t0[39:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t0[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t1[39:0]} } -insertionbar
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.we   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.we  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.waddr[8:0]}   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.we  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.waddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.w_t0[39:0]}   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.we  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.waddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.w_t0[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.w_t1[39:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.we {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.waddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.w_t0[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.w_t1[39:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t0[39:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t0[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t1[39:0]}   }
+gui_sg_create  Group11 
+gui_list_add_group -id  Wave.1   {Group11} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group11 {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t0[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t1[39:0]}}
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t0[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t1[39:0]}  tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.we  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.waddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.w_t0[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.w_t1[39:0]}   }
+gui_sg_create  Group12 
+gui_list_add_group -id  Wave.1   {Group12} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group12 {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.we} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.waddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.w_t0[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.w_t1[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t0[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t1[39:0]}}
+gui_list_select -id Wave.1 -selected  { Group11   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t0[39:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t0[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t1[39:0]}   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group11 {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t0[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t1[39:0]}}
+gui_wv_scroll_hslidermove -id  Wave.1 41104
+gui_wv_scroll_hslidermove -id  Wave.1 41338
+gui_wv_scroll_hslidermove -id  Wave.1 41104
+gui_wv_scroll_hslidermove -id  Wave.1 40870
+gui_wv_scroll_hslidermove -id  Wave.1 40636
+gui_wv_scroll_hslidermove -id  Wave.1 40402
+gui_wv_scroll_hslidermove -id  Wave.1 40168
+gui_wv_zoom_timerange -id  Wave.1 5075782 5280239
+gui_list_select -id Wave.1 -selected  { {New Group}   }
+gui_list_select -id Wave.1 -selected  { Group9   }
+gui_sg_rename  Group9   ram_hm
+gui_list_select -id Wave.1 -selected  { Group10   }
+gui_sg_rename  Group10   ram_basis
+gui_list_select -id Wave.1 -selected  { ram_hm   }
+gui_list_select -id Wave.1 -selected  { Group11   }
+gui_sg_rename  Group11   {vector target}
+gui_list_select -id Wave.1 -selected  { Group12   }
+gui_sg_rename  Group12   ram_target
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.w_t1[39:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.basis_raddr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.basis_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.hm_raddr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.basis_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.hm_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_addr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.basis_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.hm_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_addr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.waddr[8:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix decimal
+gui_wv_scroll_hslidermove -id  Wave.1 49583
+gui_wv_scroll_hslidermove -id  Wave.1 82021
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t1[39:0]}   }
+gui_list_select -id Wave.1 -selected  { {New Group}   }
+gui_wv_zoom_timerange -id  Wave.1 10364486 10572354
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.w_t1[39:0]}   }
+gui_wv_zoom_timerange -id  Wave.1 10364486 10567174
+gui_wv_zoom_timerange -id  Wave.1 10364486 10568437
+gui_wv_zoom_timerange -id  Wave.1 10364486 10569195
+gui_wv_zoom_timerange -id  Wave.1 10364486 10570585
+gui_wv_zoom_timerange -id  Wave.1 10364486 10569574
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_zoom -window Wave.1 -factor 0.5
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_zoom -window Wave.1 -factor 2
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scroll_hslidermove -id  Wave.1 121947
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.start   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_addr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.done  tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.valid  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.basis_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.hm_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_addr[8:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { target_buld_ctrl   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.start   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.busy   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.done   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.done  tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.valid   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.target_raddr[8:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.target_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.sample_addr[8:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.target_raddr[8:0]}  tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.done  tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.valid  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.sample_addr[8:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.target_raddr[8:0]}  tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.done  tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.valid  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.sample_addr[8:0]}  tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.start   }
+gui_list_add -id Wave.1 -from Data.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.start tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.busy tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.done tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.valid {tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.target_raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.sample_addr[8:0]} } -insertionbar
+gui_sg_rename  target_buld_ctrl   ffsampling_ctrl
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.start   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_hm_ram.hm_q[15:0]}   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t0[39:0]}   }
+gui_list_select -id Data.1 -selected  {  }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t1[39:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t1[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t0[39:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t0[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t1[39:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t0[39:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t0[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t1[39:0]}   }
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after ram_hm {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t0[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t1[39:0]}}
+gui_list_add  -id  Wave.1   -after {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t0[39:0]} {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t0[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t1[39:0]}} 
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_hm_ram.hm_q[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t0[39:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t1[39:0]}   }
+gui_list_select -id Wave.1 -selected  { ram_basis   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t1[39:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t1[39:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t0[39:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t0[39:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_hm_ram.hm_q[15:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t0[39:0]}   }
+gui_list_select -id Wave.1 -selected  { ram_hm   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t0[39:0]}   }
+gui_list_select -id Data.1 -selected  {  }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t1[39:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t1[39:0]} } -insertionbar
+gui_wv_zoom_timerange -id  Wave.1 15317660 15519715
+gui_wv_zoom_timerange -id  Wave.1 15317660 15522748
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.target_raddr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { ram_basis   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { ram_hm   }
+gui_sg_rename  ram_hm   ram_target
+gui_sg_rename  ram_hm   ram_target
+gui_list_select -id Wave.1 -selected  { ram_target   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { ram_hm   }
+gui_sg_rename  ram_hm   ram_target
+gui_list_select -id Wave.1 -selected  { {vector target}   }
+gui_sg_rename  {vector target}   {vector samplerZ}
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.sample_z0[39:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.sample_z0[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.sample_z1[39:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.sample_z0[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.sample_z1[39:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t0[39:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t0[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_build_ctrl.target_t1[39:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.sample_z1[39:0]}   }
+gui_list_select -id Wave.1 -selected  { {New Group}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.sample_z1[39:0]}   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.we   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.we  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.w_z0[39:0]}   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.we  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.w_z0[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.w_z1[39:0]}   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.we  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.w_z0[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.w_z1[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.waddr[8:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.we {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.waddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.w_z0[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.w_z1[39:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.we   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.we  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.waddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.w_z0[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.w_z1[39:0]}   }
+gui_sg_create  Group13 
+gui_list_add_group -id  Wave.1   {Group13} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group13 {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.we} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.waddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.w_z0[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.w_z1[39:0]}}
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { Group13   }
+gui_sg_rename  Group13   ram_sample
+gui_list_select -id Wave.1 -selected  {  }
+gui_wv_scroll_hslidermove -id  Wave.1 122563
+gui_zoom -window Wave.1 -factor 0.5
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.target_raddr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.target_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.sample_addr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.target_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_ff_sampling_ctrl.sample_addr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.waddr[8:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix decimal
+gui_marker_move -id  Wave.1 C1 15563184
+gui_marker_move -id  Wave.1 C1 15619290
+gui_marker_move -id  Wave.1 C1 15609433
+gui_zoom -window Wave.1 -factor 2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel .2
+gui_wv_scroll_hslidermove -id  Wave.1 122964
+gui_wv_scroll_hslidermove -id  Wave.1 123207
+gui_wv_scroll_hslidermove -id  Wave.1 123450
+gui_wv_scroll_hslidermove -id  Wave.1 123693
+gui_marker_move -id  Wave.1 C1 15684114
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scroll_hslidermove -id  Wave.1 159516
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_marker_move -id  Wave.1 C1 20527881
+gui_list_select -id Wave.1 -selected  { ffsampling_ctrl   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { ram_target   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {vector samplerZ}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { ram_sample   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.start   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.busy   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.done   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.done  tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.valid   }
+gui_list_add -id Wave.1 -from Data.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.start tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.busy tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.done tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.valid } -insertionbar
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.basis_raddr[8:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.basis_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.target_raddr[8:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.basis_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.target_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sample_raddr[8:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.basis_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.target_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sample_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sign_addr[8:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.basis_raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.target_raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sample_raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sign_addr[8:0]} } -insertionbar
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t0[39:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t0[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t1[39:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t0[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t1[39:0]} } -insertionbar
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.r_z0[39:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.r_z0[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.r_z1[39:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.r_z0[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.r_z1[39:0]} } -insertionbar
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b00[15:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b00[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b01[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b10[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b11[15:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b00[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b01[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b10[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b11[15:0]} } -insertionbar
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sig_s1[63:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sig_s0[63:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sig_s1[63:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sig_s0[63:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sig_s1[63:0]} } -insertionbar
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.we   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.we  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.waddr[8:0]}   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.we  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.waddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.w_s0[63:0]}   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.we  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.waddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.w_s0[63:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.w_s1[63:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.we {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.waddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.w_s0[63:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.w_s1[63:0]} } -insertionbar
+gui_list_select -id Data.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.start   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.done  tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.valid  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.basis_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.target_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sample_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sign_addr[8:0]}   }
+gui_sg_addsignal -group Group14 {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.start tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.busy tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.done tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.valid {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.basis_raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.target_raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sample_raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sign_addr[8:0]}}
+gui_sg_addsignal -group Group15 {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.start tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.busy tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.done tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.valid {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.basis_raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.target_raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sample_raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sign_addr[8:0]}}
+gui_add_signals_to_group Group1 Wave.1
+gui_sg_create  Group16 
+gui_list_add_group -id  Wave.1   {Group16} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group16 {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.start} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.busy} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.done} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.valid} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.basis_raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.target_raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sample_raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sign_addr[8:0]}}
+gui_list_select -id Wave.1 -selected  { Group16   }
+gui_sg_rename  Group16   sign_compute
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t0[39:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t0[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t1[39:0]}   }
+gui_sg_create  Group17 
+gui_list_add_group -id  Wave.1   {Group17} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group17 {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t0[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t1[39:0]}}
+gui_list_select -id Wave.1 -selected  { Group17   }
+gui_sg_rename  Group17   ram_target
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.r_z1[39:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.r_z0[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.r_z1[39:0]}   }
+gui_sg_create  Group18 
+gui_list_add_group -id  Wave.1   {Group18} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group18 {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.r_z0[39:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.r_z1[39:0]}}
+gui_list_select -id Wave.1 -selected  { Group18   }
+gui_sg_rename  Group18   ram_sample
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b00[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b00[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b01[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b10[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b11[15:0]}   }
+gui_sg_create  Group19 
+gui_list_add_group -id  Wave.1   {Group19} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group19 {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b00[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b01[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b10[15:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b11[15:0]}}
+gui_list_select -id Wave.1 -selected  { Group19   }
+gui_list_action -id  Wave.1 Group19
+gui_sg_rename  Group19   ram_basis
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sig_s0[63:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sig_s0[63:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sig_s1[63:0]}   }
+gui_sg_create  Group20 
+gui_list_add_group -id  Wave.1   {Group20} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group20 {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sig_s0[63:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sig_s1[63:0]}}
+gui_list_select -id Wave.1 -selected  { Group20   }
+gui_list_action -id  Wave.1 Group20
+gui_list_action -id  Wave.1 Group20
+gui_sg_rename  Group20   {vector signature}
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.we   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.we  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.waddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.w_s0[63:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.w_s1[63:0]}   }
+gui_copy_selected -id Wave.1
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.busy   }
+gui_list_select -id Wave.1 -selected  { {New Group}   }
+gui_paste_clipboard -id Wave.1
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.we   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.we  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.waddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.w_s0[63:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.w_s1[63:0]}   }
+gui_sg_create  Group21 
+gui_list_add_group -id  Wave.1   {Group21} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group21 {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.we} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.waddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.w_s0[63:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.w_s1[63:0]}}
+gui_wv_zoom_timerange -id  Wave.1 20464067 20662331
+gui_wv_zoom_timerange -id  Wave.1 20464067 20669155
+gui_list_select -id Wave.1 -selected  { Group21   }
+gui_list_action -id  Wave.1 Group21
+gui_sg_rename  Group21   ram_sign
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scrollleft -id  Wave.1  page
+gui_wv_scroll_hslidermove -id  Wave.1 163520
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrolldown -id  Wave.1  line
+gui_marker_move -id  Wave.1 C1 20742193
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel -.2
+gui_marker_move -id  Wave.1 C1 21515000
+gui_wv_scroll_hslidermove -id  Wave.1 166753
+gui_wv_scrollright -id  Wave.1  page
+gui_wv_scrollright -id  Wave.1  page
+gui_marker_move -id  Wave.1 C1 21918132
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -vrel .2
+gui_marker_move -id  Wave.1 C1 22975000
+gui_marker_move -id  Wave.1 C1 22965000
+gui_wv_scroll_hslidermove -id  Wave.1 178747
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.basis_raddr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.basis_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.target_raddr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.basis_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.target_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sample_raddr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.basis_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.target_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sample_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sign_addr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.basis_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.target_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sample_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sign_addr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.waddr[8:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix decimal
+gui_wv_scroll_hslidermove -id  Wave.1 202937
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_marker_move -id  Wave.1 C1 25785488
+gui_marker_move -id  Wave.1 C1 25779170
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sign_addr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { sign_compute   }
+gui_list_collapse -id  Wave.1   sign_compute
+gui_list_expand -id  Wave.1   sign_compute
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.start   }
+gui_list_select -id Wave.1 -selected  { sign_compute   }
+gui_list_collapse -id  Wave.1   sign_compute
+gui_list_expand -id  Wave.1   sign_compute
+gui_marker_move -id  Wave.1 C1 25747579
+gui_scroll -window Wave.1 -hrel -.2
+gui_list_select -id Wave.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.done  tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.valid  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.basis_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.target_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sample_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sign_addr[8:0]}  ram_target  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t0[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_target_ram.r_t1[39:0]}  ram_sample  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.r_z0[39:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram.r_z1[39:0]}  ram_basis  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b00[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b01[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b10[15:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_basis_ram.r_b11[15:0]}  {vector signature}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sig_s0[63:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_sign_compute_ctrl.sig_s1[63:0]}  ram_sign   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.start   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.done  tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.valid   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.done  tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.valid  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.sign_raddr[8:0]}   }
+gui_list_select -id Data.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.done  tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.valid  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.sign_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.norm_addr[8:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.start tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.busy tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.done tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.valid {tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.sign_raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.norm_addr[8:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.start   }
+gui_list_select -id Wave.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.start  tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.busy  tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.done  tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.valid  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.sign_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.norm_addr[8:0]}   }
+gui_sg_create  Group22 
+gui_list_add_group -id  Wave.1   {Group22} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group22 {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.start} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.busy} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.done} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.valid} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.sign_raddr[8:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.norm_addr[8:0]}}
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_sample_ram   }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.r_s0[63:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.r_s0[63:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.r_s1[63:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.r_s0[63:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.r_s1[63:0]} } -insertionbar
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.r_s0[63:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.r_s0[63:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.r_s1[63:0]}   }
+gui_sg_create  Group23 
+gui_list_add_group -id  Wave.1   {Group23} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group23 {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.r_s0[63:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_signature_ram.r_s1[63:0]}}
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Hier.1 -selected  { tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.norm_value[127:0]}   }
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.norm_value[127:0]}  tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.norm_ok   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.norm_value[127:0]} tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.norm_ok } -insertionbar
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.norm_value[127:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.norm_value[127:0]}  tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.norm_ok   }
+gui_sg_create  Group24 
+gui_list_add_group -id  Wave.1   {Group24} 
+gui_list_move  -id  Wave.1    -sid  Wave.1   -after Group24 {{tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.norm_value[127:0]} {tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.norm_ok}}
+gui_wv_zoom_timerange -id  Wave.1 25602893 25806212
+gui_wv_zoom_timerange -id  Wave.1 25602893 25804190
+gui_wv_zoom_timerange -id  Wave.1 25602893 25803306
+gui_list_select -id Wave.1 -selected  {  }
+gui_list_select -id Wave.1 -selected  { Group22   }
+gui_list_action -id  Wave.1 Group22
+gui_list_action -id  Wave.1 Group22
+gui_sg_rename  Group22   {signal norm_ctrl}
+gui_list_select -id Wave.1 -selected  { Group23   }
+gui_list_action -id  Wave.1 Group23
+gui_sg_rename  Group23   ram_signature
+gui_list_select -id Wave.1 -selected  { Group24   }
+gui_sg_rename  Group24   {result norm}
+gui_marker_move -id  Wave.1 C1 25753139
+gui_wv_scroll_hslidermove -id  Wave.1 243469
+gui_wv_scroll_hslidermove -id  Wave.1 204205
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.sign_raddr[8:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.sign_raddr[8:0]}  {tb_falcon512_sign_wrapper_v7.dut.u_core.u_norm_check_ctrl.norm_addr[8:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix decimal
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_list_select -id Wave.1 -selected  {  }
+gui_zoom -window Wave.1 -factor 2
+gui_list_select -id Wave.1 -selected  { {signal norm_ctrl}   }
+gui_list_collapse -id  Wave.1   {signal norm_ctrl}
+gui_list_expand -id  Wave.1   {signal norm_ctrl}
+gui_marker_move -id  Wave.1 C1 25845508
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel -.2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_zoom -window Wave.1 -factor 0.5
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel .2
+gui_scroll -window Wave.1 -hrel -.2
+gui_wv_scroll_hslidermove -id  Wave.1 243468
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollleft -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line
+gui_wv_scrollright -id  Wave.1  line

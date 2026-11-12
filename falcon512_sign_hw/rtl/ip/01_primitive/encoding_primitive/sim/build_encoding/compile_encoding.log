@@ -1,0 +1,35 @@
+Command: vcs -debug +v2k -sverilog -f list_encoding.f ../tb/tb_encoding.v -l build_encoding/compile_encoding.log \
+-o build_encoding/simv_encoding
+                         Chronologic VCS (TM)
+           Version E-2011.03-3 -- Sun Jul  2 10:53:23 2017
+               Copyright (c) 1991-2011 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '../sign_bit.v'
+Parsing design file '../low7_encoder.v'
+Parsing design file '../unary_encoder.v'
+Parsing design file '../bit_packer.v'
+Parsing design file '../encoding_wrapper.v'
+Parsing design file '../tb/tb_encoding.v'
+Top Level Modules:
+       tb_encoding
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+3 modules and 0 UDP read.
+recompiling module bit_packer
+recompiling module tb_encoding
+All of 3 modules done
+if [ -x ../build_encoding/simv_encoding ]; then chmod -x ../build_encoding/simv_encoding; \
+fi
+g++  -o ../build_encoding/simv_encoding -melf_i386   -Wl,-whole-archive    -Wl,-no-whole-archive \
+_vcsobj_1_1.o  5NrI_d.o 5NrIB_d.o SIM_l.o     rmapats_mop.o rmapats.o      /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libvirsim.so \
+/home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/librterrorinf.so /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libsnpsmalloc.so \
+/home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libvcsnew.so /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libuclinative.so \
+/home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/vcs_save_restore_new.o /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/ctype-stubs_32.a \
+-ldl -lm  -lc -lpthread -ldl 
+../build_encoding/simv_encoding up to date
+CPU time: .268 seconds to compile + .124 seconds to elab + .116 seconds to link

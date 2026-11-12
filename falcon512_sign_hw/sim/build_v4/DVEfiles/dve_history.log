@@ -1,0 +1,101 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file v1_wave.vpd} {gui_open_db -file inter.vpd} {gui_open_db -file /home/ltk/ASIC_TEST/vcs/counter.vpd -design V1} {gui_open_db -file /home/ltk/ASIC_TRAINING/LAB2_VCS/vcs/counter.vpd -design V1} {gui_open_db -file /home/ltk/LAB2_trvcs/THUC_HANH/vcs/CLA.vpd -design V1}}
+gui_set_state_value -category Layout -key child_console_size_x -value 1027
+gui_set_state_value -category Layout -key child_console_size_y -value 131
+gui_set_state_value -category Layout -key child_data_size_x -value 138
+gui_set_state_value -category Layout -key child_data_size_y -value 290
+gui_set_state_value -category Layout -key child_driver_size_x -value 1046
+gui_set_state_value -category Layout -key child_driver_size_y -value 179
+gui_set_state_value -category Layout -key child_hier_size_x -value 138
+gui_set_state_value -category Layout -key child_hier_size_y -value 290
+gui_set_state_value -category Layout -key child_list_down -value 140
+gui_set_state_value -category Layout -key child_list_right -value 443
+gui_set_state_value -category Layout -key child_schematic_docknewline -value false
+gui_set_state_value -category Layout -key child_schematic_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_schematic_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_schematic_size_x -value 1024
+gui_set_state_value -category Layout -key child_schematic_size_y -value 299
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 754
+gui_set_state_value -category Layout -key child_source_size_y -value 285
+gui_set_state_value -category Layout -key child_watch_size_x -value 1305
+gui_set_state_value -category Layout -key child_watch_size_y -value 105
+gui_set_state_value -category Layout -key child_wave_colname -value 267
+gui_set_state_value -category Layout -key child_wave_colvalue -value 267
+gui_set_state_value -category Layout -key child_wave_docknewline -value false
+gui_set_state_value -category Layout -key child_wave_left -value 539
+gui_set_state_value -category Layout -key child_wave_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_wave_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_wave_right -value 1315
+gui_set_state_value -category Layout -key child_wave_size_x -value 1310
+gui_set_state_value -category Layout -key child_wave_size_y -value 366
+gui_set_state_value -category Layout -key main_pos_x -value 84
+gui_set_state_value -category Layout -key main_pos_y -value 245
+gui_set_state_value -category Layout -key main_size_x -value 1111
+gui_set_state_value -category Layout -key main_size_y -value 799
+gui_set_state_value -category Layout -key stand_list_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_list_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_list_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_list_child_size_x -value 603
+gui_set_state_value -category Layout -key stand_list_child_size_y -value 285
+gui_set_state_value -category Layout -key stand_list_top_pos_x -value 528
+gui_set_state_value -category Layout -key stand_list_top_pos_y -value 92
+gui_set_state_value -category Layout -key stand_list_top_size_x -value 1126
+gui_set_state_value -category Layout -key stand_list_top_size_y -value 590
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1864
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 758
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 8
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 52
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1867
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 922
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_create_state_key -category SearchDialog -key MatchCase -value_type bool -value false
+gui_create_state_key -category SearchDialog -key MatchWord -value_type bool -value true
+gui_create_state_key -category SearchDialog -key SearchMode -value_type string -value Wildcards
+gui_create_state_key -category SearchDialog -key UseCombo -value_type bool -value true
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value {counter.vpd inter.vpd}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_argsCombo} -value_type string -value {{-ucligui }}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value /home/ltk/ASIC_TEST/vcs
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {/home/ltk/ASIC_TEST/vcs/simv simv}
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_db   -file  v4_wave.vpd
+gui_list_select -id Data.1 -selected  { {tb_falcon512_sign_top_v4.ff_count[31:0]}   }
+gui_list_select_all -id Data.1
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { tb_falcon512_sign_top_v4.clk tb_falcon512_sign_top_v4.rst_n tb_falcon512_sign_top_v4.start tb_falcon512_sign_top_v4.busy tb_falcon512_sign_top_v4.done tb_falcon512_sign_top_v4.fail {tb_falcon512_sign_top_v4.phase[3:0]} tb_falcon512_sign_top_v4.basis_valid {tb_falcon512_sign_top_v4.basis_addr[8:0]} {tb_falcon512_sign_top_v4.basis_b00[15:0]} {tb_falcon512_sign_top_v4.basis_b01[15:0]} {tb_falcon512_sign_top_v4.basis_b10[15:0]} {tb_falcon512_sign_top_v4.basis_b11[15:0]} tb_falcon512_sign_top_v4.gram_valid {tb_falcon512_sign_top_v4.gram_addr[8:0]} {tb_falcon512_sign_top_v4.gram00[39:0]} {tb_falcon512_sign_top_v4.gram01[39:0]} {tb_falcon512_sign_top_v4.gram10[39:0]} {tb_falcon512_sign_top_v4.gram11[39:0]} tb_falcon512_sign_top_v4.target_valid {tb_falcon512_sign_top_v4.target_addr[8:0]} {tb_falcon512_sign_top_v4.target_t0[39:0]} {tb_falcon512_sign_top_v4.target_t1[39:0]} tb_falcon512_sign_top_v4.ff_valid {tb_falcon512_sign_top_v4.ff_addr[8:0]} {tb_falcon512_sign_top_v4.sample_z0[39:0]} {tb_falcon512_sign_top_v4.sample_z1[39:0]} {tb_falcon512_sign_top_v4.basis_count[31:0]} {tb_falcon512_sign_top_v4.gram_count[31:0]} {tb_falcon512_sign_top_v4.target_count[31:0]} {tb_falcon512_sign_top_v4.ff_count[31:0]} {tb_falcon512_sign_top_v4.basis_csv[31:0]} {tb_falcon512_sign_top_v4.gram_csv[31:0]} {tb_falcon512_sign_top_v4.target_csv[31:0]} {tb_falcon512_sign_top_v4.sample_csv[31:0]} } -insertionbar
+gui_zoom -window Wave.1 -full
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_view_port_history -window Wave.1 -previous
+gui_view_port_history -window Wave.1 -previous
+gui_zoom -window Wave.1 -full
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 2
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_top_v4.basis_b00[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_top_v4.basis_b01[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_top_v4.basis_b10[15:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_top_v4.basis_b11[15:0]}   }
+gui_wv_scroll_hslidermove -id  Wave.1 103088
+gui_list_select -id Wave.1 -selected  { {tb_falcon512_sign_top_v4.phase[3:0]}   }
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_close_window -window TopLevel.2

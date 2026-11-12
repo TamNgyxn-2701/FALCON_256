@@ -1,0 +1,4 @@
+case=2
+logn=3
+n=8
+hn=4

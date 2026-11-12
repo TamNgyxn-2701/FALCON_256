@@ -1,0 +1,868 @@
+
+                        DC Professional (TM)
+                           DC Expert (TM)
+                            DC Ultra (TM)
+                       FloorPlan Manager (TM)
+                          HDL Compiler (TM)
+                         VHDL Compiler (TM)
+                        Library Compiler (TM)
+                      DesignWare Developer (TM)
+                          DFT Compiler (TM)
+                            BSD Compiler
+                         Power Compiler (TM)
+
+           Version D-2010.03-SP4 for linux -- Aug 27, 2010
+              Copyright (c) 1988-2010 by Synopsys, Inc.
+                         ALL RIGHTS RESERVED
+
+This software and the associated documentation are confidential and 
+proprietary to Synopsys, Inc. Your use or disclosure of this software 
+is subject to the terms and conditions of a written license agreement 
+between you, or your company, and Synopsys, Inc.
+
+The above trademark notice does not imply that you are licensed to use 
+all of the listed products. You are licensed to use only those products 
+for which you have lawfully obtained a valid license key.
+
+Initializing...
+#============================================================
+# syn_integer.tcl
+# Synthesis script for 01_primitive/integer/
+# Tool: Synopsys Design Compiler
+# Library: SAED 90nm typical
+#============================================================
+#------------------------------------------------------------
+# Library setup
+#------------------------------------------------------------
+set LIB_PATH /home/ltk/ASIC_LIB/ICC/lib/db
+/home/ltk/ASIC_LIB/ICC/lib/db
+set target_library [list $LIB_PATH/saed90nm_typ.db]
+/home/ltk/ASIC_LIB/ICC/lib/db/saed90nm_typ.db
+set link_library   [concat "*" $target_library]
+* /home/ltk/ASIC_LIB/ICC/lib/db/saed90nm_typ.db
+#------------------------------------------------------------
+# Work library
+#------------------------------------------------------------
+define_design_lib WORK -path ./work
+1
+#------------------------------------------------------------
+# RTL file list
+# Do not include testbench files
+#------------------------------------------------------------
+set RTL_LIST [list     ../int_add.v     ../int_sub.v     ../abs.v     ../square.v     ../accumulator.v     ../comparator.v ]
+../int_add.v ../int_sub.v ../abs.v ../square.v ../accumulator.v ../comparator.v
+#------------------------------------------------------------
+# Top modules to synthesize
+#------------------------------------------------------------
+set TOP_LIST [list     int_add     int_sub     abs     square     accumulator     comparator ]
+int_add int_sub abs square accumulator comparator
+#------------------------------------------------------------
+# Basic constraint
+#------------------------------------------------------------
+set CLK_PERIOD 10.0
+10.0
+#------------------------------------------------------------
+# Synthesis each integer primitive
+#------------------------------------------------------------
+foreach TOP $TOP_LIST {
+
+    puts "============================================================"
+    puts "SYNTHESIS TOP: $TOP"
+    puts "============================================================"
+
+    remove_design -all
+
+    analyze -format verilog $RTL_LIST
+    elaborate $TOP
+    current_design $TOP
+    link
+    uniquify
+
+    #--------------------------------------------------------
+    # Timing constraints
+    #--------------------------------------------------------
+    set clk_ports [get_ports -quiet clk]
+
+    if {[sizeof_collection $clk_ports] > 0} {
+        create_clock -name clk -period $CLK_PERIOD $clk_ports
+        set_dont_touch_network $clk_ports
+
+        set rst_ports [get_ports -quiet rst_n]
+        if {[sizeof_collection $rst_ports] > 0} {
+            set_false_path -from $rst_ports
+        }
+
+        set input_ports_no_clk [remove_from_collection [all_inputs] $clk_ports]
+        set_input_delay  1.0 -clock clk $input_ports_no_clk
+        set_output_delay 1.0 -clock clk [all_outputs]
+    } else {
+        # For pure combinational modules
+        set_max_delay $CLK_PERIOD -from [all_inputs] -to [all_outputs]
+    }
+
+    set_max_area 0
+
+    #--------------------------------------------------------
+    # Check design before compile
+    #--------------------------------------------------------
+    check_design > reports/${TOP}_check_design.rpt
+
+    #--------------------------------------------------------
+    # Compile
+    #--------------------------------------------------------
+    compile
+
+    #--------------------------------------------------------
+    # Reports
+    #--------------------------------------------------------
+    report_area   > reports/${TOP}_area.rpt
+    report_timing > reports/${TOP}_timing.rpt
+    report_power  > reports/${TOP}_power.rpt
+    report_cell   > reports/${TOP}_cell.rpt
+    check_design  > reports/${TOP}_check_after_compile.rpt
+
+    #--------------------------------------------------------
+    # Output synthesized files
+    #--------------------------------------------------------
+    write -format verilog -hierarchy -output netlist/${TOP}_syn.v
+    write_sdf sdf/${TOP}.sdf
+
+    puts "DONE SYNTHESIS TOP: $TOP"
+}
+============================================================
+SYNTHESIS TOP: int_add
+============================================================
+Running PRESTO HDLC
+Compiling source file ../int_add.v
+Compiling source file ../int_sub.v
+Compiling source file ../abs.v
+Compiling source file ../square.v
+Compiling source file ../accumulator.v
+Compiling source file ../comparator.v
+Presto compilation completed successfully.
+Loading db file '/home/ltk/ASIC_LIB/ICC/lib/db/saed90nm_typ.db'
+Loading db file '/home/eda/synopsys/syn_vD-2010.03-SP4/libraries/syn/gtech.db'
+Loading db file '/home/eda/synopsys/syn_vD-2010.03-SP4/libraries/syn/standard.sldb'
+  Loading link library 'saed90nm_typ'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ../int_add.v:16: unsigned to signed assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'int_add'.
+Current design is 'int_add'.
+
+  Linking design 'int_add'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  int_add                     /home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ip/01_primitive/integer/syn/int_add.db
+  saed90nm_typ (library)      /home/ltk/ASIC_LIB/ICC/lib/db/saed90nm_typ.db
+
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library       |      Version       | Available |
+============================================================================
+| Basic DW Building Blocks                | D-2010.03-DWBB_1009 |    *     |
+| Licensed DW Building Blocks             |                    |           |
+============================================================================
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'int_add'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'int_add_DW01_add_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    1058.7      0.00       0.0       0.0                          
+    0:00:01    1058.7      0.00       0.0       0.0                          
+    0:00:01    1058.7      0.00       0.0       0.0                          
+    0:00:01    1058.7      0.00       0.0       0.0                          
+    0:00:01    1058.7      0.00       0.0       0.0                          
+    0:00:01     959.5      0.00       0.0       0.0                          
+    0:00:01     959.5      0.00       0.0       0.0                          
+    0:00:01     959.5      0.00       0.0       0.0                          
+    0:00:01     959.5      0.00       0.0       0.0                          
+    0:00:01     959.5      0.00       0.0       0.0                          
+    0:00:01     959.5      0.00       0.0       0.0                          
+    0:00:01     959.5      0.00       0.0       0.0                          
+    0:00:01     959.5      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01     959.5      0.00       0.0       0.0                          
+    0:00:01     959.5      0.00       0.0       0.0                          
+    0:00:02     959.5      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:02     959.5      0.00       0.0       0.0                          
+    0:00:02     959.5      0.00       0.0       0.0                          
+    0:00:02     959.5      0.00       0.0       0.0                          
+    0:00:02     959.5      0.00       0.0       0.0                          
+    0:00:02     959.5      0.00       0.0       0.0                          
+    0:00:02     959.5      0.00       0.0       0.0                          
+    0:00:02     957.6      0.00       0.0       0.0                          
+    0:00:02     957.6      0.00       0.0       0.0                          
+    0:00:02     957.6      0.00       0.0       0.0                          
+    0:00:02     957.6      0.00       0.0       0.0                          
+    0:00:02     957.6      0.00       0.0       0.0                          
+    0:00:02     957.6      0.00       0.0       0.0                          
+    0:00:02     957.6      0.00       0.0       0.0                          
+    0:00:02     957.6      0.00       0.0       0.0                          
+    0:00:02     957.6      0.00       0.0       0.0                          
+    0:00:02     957.6      0.00       0.0       0.0                          
+    0:00:02     957.6      0.00       0.0       0.0                          
+    0:00:02     957.6      0.00       0.0       0.0                          
+    0:00:02     957.6      0.00       0.0       0.0                          
+Loading db file '/home/ltk/ASIC_LIB/ICC/lib/db/saed90nm_typ.db'
+
+  Optimization Complete
+  ---------------------
+Writing verilog file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ip/01_primitive/integer/syn/netlist/int_add_syn.v'.
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ip/01_primitive/integer/syn/sdf/int_add.sdf'. (WT-3)
+DONE SYNTHESIS TOP: int_add
+============================================================
+SYNTHESIS TOP: int_sub
+============================================================
+Removing design 'int_add'
+Removing design 'int_add_DW01_add_0'
+Removing library 'saed90nm_typ'
+Removing library 'gtech'
+Removing library 'standard.sldb'
+Running PRESTO HDLC
+Compiling source file ../int_add.v
+Compiling source file ../int_sub.v
+Compiling source file ../abs.v
+Compiling source file ../square.v
+Compiling source file ../accumulator.v
+Compiling source file ../comparator.v
+Presto compilation completed successfully.
+Loading db file '/home/ltk/ASIC_LIB/ICC/lib/db/saed90nm_typ.db'
+Loading db file '/home/eda/synopsys/syn_vD-2010.03-SP4/libraries/syn/gtech.db'
+Loading db file '/home/eda/synopsys/syn_vD-2010.03-SP4/libraries/syn/standard.sldb'
+  Loading link library 'saed90nm_typ'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ../int_sub.v:16: unsigned to signed assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'int_sub'.
+Current design is 'int_sub'.
+
+  Linking design 'int_sub'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  int_sub                     /home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ip/01_primitive/integer/syn/int_sub.db
+  saed90nm_typ (library)      /home/ltk/ASIC_LIB/ICC/lib/db/saed90nm_typ.db
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'int_sub'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'int_sub_DW01_sub_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    1910.2      0.00       0.0       0.0                          
+    0:00:01    1910.2      0.00       0.0       0.0                          
+    0:00:01    1910.2      0.00       0.0       0.0                          
+    0:00:01    1910.2      0.00       0.0       0.0                          
+    0:00:01    1910.2      0.00       0.0       0.0                          
+    0:00:02    1143.6      0.00       0.0       0.0                          
+    0:00:02    1143.6      0.00       0.0       0.0                          
+    0:00:02    1143.6      0.00       0.0       0.0                          
+    0:00:02    1143.6      0.00       0.0       0.0                          
+    0:00:02    1143.6      0.00       0.0       0.0                          
+    0:00:02    1143.6      0.00       0.0       0.0                          
+    0:00:02    1143.6      0.00       0.0       0.0                          
+    0:00:02    1143.6      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:02    1143.6      0.00       0.0       0.0                          
+    0:00:02    1143.6      0.00       0.0       0.0                          
+    0:00:02    1143.6      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:02    1143.6      0.00       0.0       0.0                          
+    0:00:02    1143.6      0.00       0.0       0.0                          
+    0:00:02    1138.1      0.00       0.0       0.0                          
+    0:00:02    1138.1      0.00       0.0       0.0                          
+    0:00:02    1138.1      0.00       0.0       0.0                          
+    0:00:02    1138.1      0.00       0.0       0.0                          
+    0:00:02    1138.1      0.00       0.0       0.0                          
+    0:00:02    1138.1      0.00       0.0       0.0                          
+    0:00:02    1138.1      0.00       0.0       0.0                          
+    0:00:02    1138.1      0.00       0.0       0.0                          
+    0:00:02    1138.1      0.00       0.0       0.0                          
+    0:00:02    1138.1      0.00       0.0       0.0                          
+    0:00:02    1138.1      0.00       0.0       0.0                          
+    0:00:02    1138.1      0.00       0.0       0.0                          
+    0:00:02    1138.1      0.00       0.0       0.0                          
+    0:00:02    1138.1      0.00       0.0       0.0                          
+    0:00:02    1138.1      0.00       0.0       0.0                          
+    0:00:02    1138.1      0.00       0.0       0.0                          
+    0:00:02    1138.1      0.00       0.0       0.0                          
+Loading db file '/home/ltk/ASIC_LIB/ICC/lib/db/saed90nm_typ.db'
+
+  Optimization Complete
+  ---------------------
+Writing verilog file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ip/01_primitive/integer/syn/netlist/int_sub_syn.v'.
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ip/01_primitive/integer/syn/sdf/int_sub.sdf'. (WT-3)
+DONE SYNTHESIS TOP: int_sub
+============================================================
+SYNTHESIS TOP: abs
+============================================================
+Removing design 'int_sub'
+Removing design 'int_sub_DW01_sub_0'
+Removing library 'saed90nm_typ'
+Removing library 'gtech'
+Removing library 'standard.sldb'
+Running PRESTO HDLC
+Compiling source file ../int_add.v
+Compiling source file ../int_sub.v
+Compiling source file ../abs.v
+Compiling source file ../square.v
+Compiling source file ../accumulator.v
+Compiling source file ../comparator.v
+Presto compilation completed successfully.
+Loading db file '/home/ltk/ASIC_LIB/ICC/lib/db/saed90nm_typ.db'
+Loading db file '/home/eda/synopsys/syn_vD-2010.03-SP4/libraries/syn/gtech.db'
+Loading db file '/home/eda/synopsys/syn_vD-2010.03-SP4/libraries/syn/standard.sldb'
+  Loading link library 'saed90nm_typ'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ../abs.v:15: signed to unsigned conversion occurs. (VER-318)
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'abs'.
+Current design is 'abs'.
+
+  Linking design 'abs'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  abs                         /home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ip/01_primitive/integer/syn/abs.db
+  saed90nm_typ (library)      /home/ltk/ASIC_LIB/ICC/lib/db/saed90nm_typ.db
+
+
+Information: There are 1 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'abs'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'abs_DW01_inc_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    1904.9      0.00       0.0       0.0                          
+    0:00:01    1904.9      0.00       0.0       0.0                          
+    0:00:01    1904.9      0.00       0.0       0.0                          
+    0:00:01    1904.9      0.00       0.0       0.0                          
+    0:00:01    1904.9      0.00       0.0       0.0                          
+    0:00:01    1050.6      0.00       0.0       0.0                          
+    0:00:01    1050.6      0.00       0.0       0.0                          
+    0:00:01    1050.6      0.00       0.0       0.0                          
+    0:00:01    1050.6      0.00       0.0       0.0                          
+    0:00:01    1050.6      0.00       0.0       0.0                          
+    0:00:01    1050.6      0.00       0.0       0.0                          
+    0:00:01    1050.6      0.00       0.0       0.0                          
+    0:00:01    1050.6      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    1050.6      0.00       0.0       0.0                          
+    0:00:01    1050.6      0.00       0.0       0.0                          
+    0:00:02    1050.6      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:02    1050.6      0.00       0.0       0.0                          
+    0:00:02    1050.6      0.00       0.0       0.0                          
+    0:00:02    1045.1      0.00       0.0       0.0                          
+    0:00:02    1045.1      0.00       0.0       0.0                          
+    0:00:02    1045.1      0.00       0.0       0.0                          
+    0:00:02    1045.1      0.00       0.0       0.0                          
+    0:00:02    1045.1      0.00       0.0       0.0                          
+    0:00:02    1045.1      0.00       0.0       0.0                          
+    0:00:02    1045.1      0.00       0.0       0.0                          
+    0:00:02    1045.1      0.00       0.0       0.0                          
+    0:00:02    1045.1      0.00       0.0       0.0                          
+    0:00:02    1045.1      0.00       0.0       0.0                          
+    0:00:02    1045.1      0.00       0.0       0.0                          
+    0:00:02    1045.1      0.00       0.0       0.0                          
+    0:00:02    1045.1      0.00       0.0       0.0                          
+    0:00:02    1045.1      0.00       0.0       0.0                          
+    0:00:02    1045.1      0.00       0.0       0.0                          
+    0:00:02    1045.1      0.00       0.0       0.0                          
+    0:00:02    1045.1      0.00       0.0       0.0                          
+Loading db file '/home/ltk/ASIC_LIB/ICC/lib/db/saed90nm_typ.db'
+
+  Optimization Complete
+  ---------------------
+Writing verilog file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ip/01_primitive/integer/syn/netlist/abs_syn.v'.
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ip/01_primitive/integer/syn/sdf/abs.sdf'. (WT-3)
+DONE SYNTHESIS TOP: abs
+============================================================
+SYNTHESIS TOP: square
+============================================================
+Removing design 'abs'
+Removing design 'abs_DW01_inc_0'
+Removing library 'saed90nm_typ'
+Removing library 'gtech'
+Removing library 'standard.sldb'
+Running PRESTO HDLC
+Compiling source file ../int_add.v
+Compiling source file ../int_sub.v
+Compiling source file ../abs.v
+Compiling source file ../square.v
+Compiling source file ../accumulator.v
+Compiling source file ../comparator.v
+Presto compilation completed successfully.
+Loading db file '/home/ltk/ASIC_LIB/ICC/lib/db/saed90nm_typ.db'
+Loading db file '/home/eda/synopsys/syn_vD-2010.03-SP4/libraries/syn/gtech.db'
+Loading db file '/home/eda/synopsys/syn_vD-2010.03-SP4/libraries/syn/standard.sldb'
+  Loading link library 'saed90nm_typ'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ../square.v:136: signed to unsigned conversion occurs. (VER-318)
+
+Statistics for case statements in always block at line 89 in file
+	'../square.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           104            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine square line 89 in file
+		'../square.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       acc_reg       | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      done_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      count_reg      | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      count_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   square_out_reg    | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    carry_reg_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   low_sum_reg_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      busy_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|      state_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   multiplier_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  multiplicand_reg   | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'square'.
+Current design is 'square'.
+
+  Linking design 'square'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  square                      /home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ip/01_primitive/integer/syn/square.db
+  saed90nm_typ (library)      /home/ltk/ASIC_LIB/ICC/lib/db/saed90nm_typ.db
+
+
+Information: There are 2 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'square'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'square_DW01_inc_0'
+  Processing 'square_DW01_add_0'
+  Processing 'square_DW01_add_1'
+  Processing 'square_DW01_inc_1'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:04   18434.6      0.00       0.0       0.0                          
+    0:00:04   18434.6      0.00       0.0       0.0                          
+    0:00:04   18434.6      0.00       0.0       0.0                          
+    0:00:04   18434.6      0.00       0.0       0.0                          
+    0:00:04   18434.6      0.00       0.0       0.0                          
+    0:00:05   15627.3      0.00       0.0       0.0                          
+    0:00:05   15627.3      0.00       0.0       0.0                          
+    0:00:05   15627.3      0.00       0.0       0.0                          
+    0:00:05   15627.3      0.00       0.0       0.0                          
+    0:00:05   15627.3      0.00       0.0       0.0                          
+    0:00:05   15627.3      0.00       0.0       0.0                          
+    0:00:05   15627.3      0.00       0.0       0.0                          
+    0:00:05   15627.3      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:05   15627.3      0.00       0.0       0.0                          
+    0:00:05   15627.3      0.00       0.0       0.0                          
+    0:00:05   15627.3      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:05   15627.3      0.00       0.0       0.0                          
+    0:00:05   15627.3      0.00       0.0       0.0                          
+    0:00:05   15623.8      0.00       0.0       0.0                          
+    0:00:05   15623.8      0.00       0.0       0.0                          
+    0:00:05   15623.8      0.00       0.0       0.0                          
+    0:00:05   15623.8      0.00       0.0       0.0                          
+    0:00:05   15623.8      0.00       0.0       0.0                          
+    0:00:05   15623.8      0.00       0.0       0.0                          
+    0:00:05   15623.8      0.00       0.0       0.0                          
+    0:00:05   15623.8      0.00       0.0       0.0                          
+    0:00:05   15623.8      0.00       0.0       0.0                          
+    0:00:05   15623.8      0.00       0.0       0.0                          
+    0:00:05   15623.8      0.00       0.0       0.0                          
+    0:00:05   15623.8      0.00       0.0       0.0                          
+    0:00:05   15623.8      0.00       0.0       0.0                          
+    0:00:05   15623.8      0.00       0.0       0.0                          
+    0:00:05   15623.8      0.00       0.0       0.0                          
+    0:00:05   15623.8      0.00       0.0       0.0                          
+    0:00:06   15623.8      0.00       0.0       0.0                          
+Loading db file '/home/ltk/ASIC_LIB/ICC/lib/db/saed90nm_typ.db'
+
+  Optimization Complete
+  ---------------------
+Writing verilog file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ip/01_primitive/integer/syn/netlist/square_syn.v'.
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ip/01_primitive/integer/syn/sdf/square.sdf'. (WT-3)
+DONE SYNTHESIS TOP: square
+============================================================
+SYNTHESIS TOP: accumulator
+============================================================
+Removing design 'square'
+Removing design 'square_DW01_inc_0'
+Removing design 'square_DW01_add_0'
+Removing design 'square_DW01_add_1'
+Removing design 'square_DW01_inc_1'
+Removing library 'saed90nm_typ'
+Removing library 'gtech'
+Removing library 'standard.sldb'
+Running PRESTO HDLC
+Compiling source file ../int_add.v
+Compiling source file ../int_sub.v
+Compiling source file ../abs.v
+Compiling source file ../square.v
+Compiling source file ../accumulator.v
+Compiling source file ../comparator.v
+Presto compilation completed successfully.
+Loading db file '/home/ltk/ASIC_LIB/ICC/lib/db/saed90nm_typ.db'
+Loading db file '/home/eda/synopsys/syn_vD-2010.03-SP4/libraries/syn/gtech.db'
+Loading db file '/home/eda/synopsys/syn_vD-2010.03-SP4/libraries/syn/standard.sldb'
+  Loading link library 'saed90nm_typ'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine accumulator line 22 in file
+		'../accumulator.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    out_valid_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     acc_out_reg     | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'accumulator'.
+Current design is 'accumulator'.
+
+  Linking design 'accumulator'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  accumulator                 /home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ip/01_primitive/integer/syn/accumulator.db
+  saed90nm_typ (library)      /home/ltk/ASIC_LIB/ICC/lib/db/saed90nm_typ.db
+
+
+Information: There are 1 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'accumulator'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'accumulator_DW01_add_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:03    5960.4      0.00       0.0       0.0                          
+    0:00:03    5960.4      0.00       0.0       0.0                          
+    0:00:03    5960.4      0.00       0.0       0.0                          
+    0:00:03    5960.4      0.00       0.0       0.0                          
+    0:00:03    5960.4      0.00       0.0       0.0                          
+    0:00:03    4555.8      0.00       0.0       0.0                          
+    0:00:03    4555.8      0.00       0.0       0.0                          
+    0:00:03    4555.8      0.00       0.0       0.0                          
+    0:00:03    4555.8      0.00       0.0       0.0                          
+    0:00:03    4555.8      0.00       0.0       0.0                          
+    0:00:03    4555.8      0.00       0.0       0.0                          
+    0:00:03    4555.8      0.00       0.0       0.0                          
+    0:00:03    4555.8      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:03    4555.8      0.00       0.0       0.0                          
+    0:00:03    4555.8      0.00       0.0       0.0                          
+    0:00:03    4555.8      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:03    4555.8      0.00       0.0       0.0                          
+    0:00:03    4555.8      0.00       0.0       0.0                          
+    0:00:03    4555.8      0.00       0.0       0.0                          
+    0:00:03    4555.8      0.00       0.0       0.0                          
+    0:00:03    4555.8      0.00       0.0       0.0                          
+    0:00:03    4555.8      0.00       0.0       0.0                          
+    0:00:03    4553.0      0.00       0.0       0.0                          
+    0:00:03    4553.0      0.00       0.0       0.0                          
+    0:00:03    4553.0      0.00       0.0       0.0                          
+    0:00:03    4553.0      0.00       0.0       0.0                          
+    0:00:03    4553.0      0.00       0.0       0.0                          
+    0:00:03    4553.0      0.00       0.0       0.0                          
+    0:00:03    4553.0      0.00       0.0       0.0                          
+    0:00:03    4553.0      0.00       0.0       0.0                          
+    0:00:03    4553.0      0.00       0.0       0.0                          
+    0:00:03    4553.0      0.00       0.0       0.0                          
+    0:00:03    4553.0      0.00       0.0       0.0                          
+    0:00:03    4553.0      0.00       0.0       0.0                          
+    0:00:03    4553.0      0.00       0.0       0.0                          
+Loading db file '/home/ltk/ASIC_LIB/ICC/lib/db/saed90nm_typ.db'
+
+  Optimization Complete
+  ---------------------
+Writing verilog file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ip/01_primitive/integer/syn/netlist/accumulator_syn.v'.
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ip/01_primitive/integer/syn/sdf/accumulator.sdf'. (WT-3)
+DONE SYNTHESIS TOP: accumulator
+============================================================
+SYNTHESIS TOP: comparator
+============================================================
+Removing design 'accumulator'
+Removing design 'accumulator_DW01_add_0'
+Removing library 'saed90nm_typ'
+Removing library 'gtech'
+Removing library 'standard.sldb'
+Running PRESTO HDLC
+Compiling source file ../int_add.v
+Compiling source file ../int_sub.v
+Compiling source file ../abs.v
+Compiling source file ../square.v
+Compiling source file ../accumulator.v
+Compiling source file ../comparator.v
+Presto compilation completed successfully.
+Loading db file '/home/ltk/ASIC_LIB/ICC/lib/db/saed90nm_typ.db'
+Loading db file '/home/eda/synopsys/syn_vD-2010.03-SP4/libraries/syn/gtech.db'
+Loading db file '/home/eda/synopsys/syn_vD-2010.03-SP4/libraries/syn/standard.sldb'
+  Loading link library 'saed90nm_typ'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'comparator'.
+Current design is 'comparator'.
+
+  Linking design 'comparator'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  comparator                  /home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ip/01_primitive/integer/syn/comparator.db
+  saed90nm_typ (library)      /home/ltk/ASIC_LIB/ICC/lib/db/saed90nm_typ.db
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'comparator'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'comparator_DW01_cmp6_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:02    3775.0      0.00       0.0       0.0                          
+    0:00:02    3775.0      0.00       0.0       0.0                          
+    0:00:02    3775.0      0.00       0.0       0.0                          
+    0:00:03    3775.0      0.00       0.0       0.0                          
+    0:00:03    3775.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+    0:00:03    2376.0      0.00       0.0       0.0                          
+Loading db file '/home/ltk/ASIC_LIB/ICC/lib/db/saed90nm_typ.db'
+
+  Optimization Complete
+  ---------------------
+Writing verilog file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ip/01_primitive/integer/syn/netlist/comparator_syn.v'.
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ip/01_primitive/integer/syn/sdf/comparator.sdf'. (WT-3)
+DONE SYNTHESIS TOP: comparator
+quit
+
+Memory usage for main task 62 Mbytes.
+Memory usage for this session 62 Mbytes.
+CPU usage for this session 18 seconds ( 0.01 hours ).
+
+Thank you...

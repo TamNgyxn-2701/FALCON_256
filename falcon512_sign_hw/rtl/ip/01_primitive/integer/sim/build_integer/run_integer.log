@@ -1,0 +1,91 @@
+Command: ./build_integer/simv_integer -l build_integer/run_integer.log
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version E-2011.03-3; Runtime version E-2011.03-3;  Jul  4 09:55 2017
+========================================
+TEST int_add / int_sub / abs
+WIDTH = 16 signed
+========================================
+[PASS] int_add 0 + 0: 0
+[PASS] int_sub 0 - 0: 0
+[PASS] abs 0: 0
+[PASS] int_add 5 + 3: 8
+[PASS] int_sub 5 - 3: 2
+[PASS] abs 5: 5
+[PASS] int_add -5 + 3: -2
+[PASS] int_sub -5 - 3: -8
+[PASS] abs -5: 5
+[PASS] int_add 30000 + 2000: 32000
+[PASS] int_sub 30000 - 2000: 28000
+[PASS] abs 30000: 30000
+[PASS] int_add 32767 + 1: 32768
+[PASS] int_sub 32767 - 1: 32766
+[PASS] abs 32767: 32767
+[PASS] int_add -32768 + 1: -32767
+[PASS] int_sub -32768 - 1: -32769
+[PASS] abs -32768: 32768
+[PASS] int_sub 32767 - -32768: 65535
+[PASS] int_sub -32768 - 32767: -65535
+========================================
+TEST square sequential optimized-Fmax
+WIDTH = 16 signed
+========================================
+[PASS] square: 0
+[PASS] square: 25
+[PASS] square: 25
+[PASS] square: 900000000
+[PASS] square: 1073676289
+[PASS] square: 1073741824
+========================================
+TEST comparator
+WIDTH = 64 unsigned
+========================================
+[PASS] 10 < 20: 1
+[PASS] 10 <= 20: 1
+[PASS] 10 == 20: 0
+[PASS] 10 >= 20: 0
+[PASS] 10 > 20: 0
+[PASS] large equal lt: 0
+[PASS] large equal le: 1
+[PASS] large equal eq: 1
+[PASS] large equal ge: 1
+[PASS] large equal gt: 0
+[PASS] large greater lt: 0
+[PASS] large greater le: 0
+[PASS] large greater eq: 0
+[PASS] large greater ge: 1
+[PASS] large greater gt: 1
+[PASS] max64 > 0: 1
+[PASS] max64 == 0: 0
+[PASS] max64 < 0: 0
+========================================
+TEST accumulator
+IN_WIDTH = 32, ACC_WIDTH = 64
+========================================
+[PASS] acc reset: 0
+[PASS] acc add 1073741824: 1073741824
+[PASS] acc valid 1: 1
+[PASS] acc add 900000000: 1973741824
+[PASS] acc valid 2: 1
+[PASS] acc add 4000000000: 5973741824
+[PASS] acc valid 3: 1
+[PASS] acc hold when in_valid=0: 5973741824
+[PASS] acc valid when in_valid=0: 0
+[PASS] acc hold when ena=0: 5973741824
+[PASS] acc clear: 0
+[PASS] acc valid after clear: 0
+========================================
+TEST accumulator repeated Falcon-like sum
+1024 times max 16-bit square
+========================================
+[PASS] acc 1024 * 1073741824: 1099511627776
+[PASS] acc valid repeated: 1
+========================================
+INTEGER LARGE TEST PASS
+========================================
+$finish called from file "../tb/tb_integer.v", line 459.
+$finish at simulation time             12436000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 12436000 ps
+CPU Time:      0.290 seconds;       Data structure size:   0.0Mb
+Tue Jul  4 09:55:37 2017

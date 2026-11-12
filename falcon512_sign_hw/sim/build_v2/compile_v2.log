@@ -1,0 +1,51 @@
+Command: vcs -debug +v2k -sverilog -f ../listfile_v2.f -l compile_v2.log -o simv \
+
+                         Chronologic VCS (TM)
+           Version E-2011.03-3 -- Fri Jun 16 21:03:49 2017
+               Copyright (c) 1991-2011 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/mem/key_ram.v'
+Parsing included file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/common/falcon512_params.v'.
+Back to file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/mem/key_ram.v'.
+Parsing design file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/mem/basis_ram.v'
+Parsing included file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/common/falcon512_params.v'.
+Back to file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/mem/basis_ram.v'.
+Parsing design file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ctrl/basis_build_ctrl.v'
+Parsing included file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/common/falcon512_params.v'.
+Back to file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ctrl/basis_build_ctrl.v'.
+Parsing design file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ctrl/gram_build_ctrl.v'
+Parsing included file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/common/falcon512_params.v'.
+Back to file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ctrl/gram_build_ctrl.v'.
+Parsing design file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ctrl/sign_main_ctrl.v'
+Parsing included file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/common/falcon512_params.v'.
+Back to file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ctrl/sign_main_ctrl.v'.
+Parsing included file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/common/task_opcode.v'.
+Back to file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/ctrl/sign_main_ctrl.v'.
+Parsing design file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/top/falcon512_sign_top.v'
+Parsing included file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/common/falcon512_params.v'.
+Back to file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/rtl/top/falcon512_sign_top.v'.
+Parsing design file '/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/tb/tb_falcon512_sign_top_v2.v'
+Top Level Modules:
+       tb_falcon512_sign_top_v2
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+2 modules and 0 UDP read.
+	However, due to incremental compilation, only 1 module needs to be compiled.
+recompiling module tb_falcon512_sign_top_v2 because:
+	This module or some inlined child module(s) has/have been modified.
+ld -r -m elf_i386 -o pre_vcsobj_1_1.o --whole-archive pre_vcsobj_1_1.a --no-whole-archive \
+
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv -melf_i386   -Wl,-whole-archive    -Wl,-no-whole-archive  _vcsobj_1_1.o \
+5NrI_d.o 5NrIB_d.o SIM_l.o    pre_vcsobj_1_1.o  rmapats_mop.o rmapats.o      /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libvirsim.so \
+/home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/librterrorinf.so /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libsnpsmalloc.so \
+/home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libvcsnew.so /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libuclinative.so \
+/home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/vcs_save_restore_new.o /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/ctype-stubs_32.a \
+-ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+CPU time: .064 seconds to compile + .012 seconds to elab + .052 seconds to link

@@ -1,0 +1,64 @@
+Command: ./build_rng_prim/simv_rng_prim -l build_rng_prim/run_rng_prim.log
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version E-2011.03-3; Runtime version E-2011.03-3;  Jul  2 21:14 2017
+========================================
+TEST random_byte
+========================================
+[PASS] random_byte out_valid: 1
+[PASS] random_byte value: b4
+[PASS] random_byte valid drop: 0
+[PASS] random_byte out_valid: 1
+[PASS] random_byte value: 51
+[PASS] random_byte valid drop: 0
+[PASS] random_byte out_valid: 1
+[PASS] random_byte value: 46
+[PASS] random_byte valid drop: 0
+[PASS] random_byte out_valid: 1
+[PASS] random_byte value: 3a
+[PASS] random_byte valid drop: 0
+========================================
+TEST uniform_bits
+========================================
+---- UniformBits(0) ----
+[PASS] uniform_bits result: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+[PASS] uniform_bits out_valid seen: 1
+---- UniformBits(1) ----
+[PASS] uniform_bits result: 00000000000000000000000000000000000000000000000000000000000000000000000000000001
+[PASS] uniform_bits out_valid seen: 1
+---- UniformBits(8) ----
+[PASS] uniform_bits result: 000000000000000000000000000000000000000000000000000000000000000000000000000000a5
+[PASS] uniform_bits out_valid seen: 1
+---- UniformBits(9) ----
+[PASS] uniform_bits result: 000000000000000000000000000000000000000000000000000000000000000000000000000000a5
+[PASS] uniform_bits out_valid seen: 1
+---- UniformBits(16) ----
+[PASS] uniform_bits result: 00000000000000000000000000000000000000000000000000000000000000000000000000003ca5
+[PASS] uniform_bits out_valid seen: 1
+========================================
+TEST rng_wrapper
+========================================
+---- rng_wrapper UniformBits(1) ----
+[PASS] rng_wrapper result: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+[PASS] rng_wrapper out_valid seen: 1
+---- rng_wrapper UniformBits(8) ----
+[PASS] rng_wrapper result: 000000000000000000000000000000000000000000000000000000000000000000000000000000b4
+[PASS] rng_wrapper out_valid seen: 1
+---- rng_wrapper UniformBits(16) ----
+[PASS] rng_wrapper result: 000000000000000000000000000000000000000000000000000000000000000000000000000051b4
+[PASS] rng_wrapper out_valid seen: 1
+---- rng_wrapper UniformBits(72) ----
+[PASS] rng_wrapper result: 00000000000000000000000000000000000000000000000000000000000000a49189d7413a4651b4
+[PASS] rng_wrapper out_valid seen: 1
+---- rng_wrapper UniformBits(320) ----
+[PASS] rng_wrapper result: aa8cc1fd22a2d95ad05a68c00d561e292c58b6ee8bcd7639c93c636702649aa49189d7413a4651b4
+[PASS] rng_wrapper out_valid seen: 1
+========================================
+RNG PRIMITIVE TEST PASS
+========================================
+$finish called from file "../tb/tb_rng_prim.v", line 451.
+$finish at simulation time              2116000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2116000 ps
+CPU Time:      0.080 seconds;       Data structure size:   0.0Mb
+Sun Jul  2 21:14:11 2017

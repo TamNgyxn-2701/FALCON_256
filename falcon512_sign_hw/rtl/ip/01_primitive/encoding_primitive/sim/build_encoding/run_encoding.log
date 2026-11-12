@@ -1,0 +1,96 @@
+Command: ./build_encoding/simv_encoding -l build_encoding/run_encoding.log
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version E-2011.03-3; Runtime version E-2011.03-3;  Jul  2 10:53 2017
+========================================
+TEST sign_bit
+========================================
+[PASS] sign 0: 0
+[PASS] abs 0: 0
+[PASS] sign 5: 0
+[PASS] abs 5: 5
+[PASS] sign -5: 1
+[PASS] abs -5: 5
+[PASS] sign -32768: 1
+[PASS] abs -32768: 32768
+========================================
+TEST low7_encoder
+========================================
+[PASS] low7 0: 0
+[PASS] high 0: 0
+[PASS] low7 5: 5
+[PASS] high 5: 0
+[PASS] low7 127: 127
+[PASS] high 127: 0
+[PASS] low7 128: 0
+[PASS] high 128: 1
+[PASS] low7 300: 44
+[PASS] high 300: 2
+[PASS] low7 32768: 0
+[PASS] high 32768: 256
+========================================
+TEST unary_encoder
+========================================
+---- Test unary high = 0 ----
+[PASS] unary output bit: 1
+[PASS] unary done seen: 1
+[PASS] unary bit count: 1
+---- Test unary high = 1 ----
+[PASS] unary output bit: 0
+[PASS] unary output bit: 1
+[PASS] unary done seen: 1
+[PASS] unary bit count: 2
+---- Test unary high = 2 ----
+[PASS] unary output bit: 0
+[PASS] unary output bit: 0
+[PASS] unary output bit: 1
+[PASS] unary done seen: 1
+[PASS] unary bit count: 3
+---- Test unary high = 5 ----
+[PASS] unary output bit: 0
+[PASS] unary output bit: 0
+[PASS] unary output bit: 0
+[PASS] unary output bit: 0
+[PASS] unary output bit: 0
+[PASS] unary output bit: 1
+[PASS] unary done seen: 1
+[PASS] unary bit count: 6
+========================================
+TEST bit_packer
+========================================
+[PASS] packer byte_valid full: 1
+[PASS] packer byte AC: ac
+[PASS] packer byte_valid flush: 1
+[PASS] packer byte A0: a0
+========================================
+TEST encoding_wrapper
+========================================
+---- Test encoding_wrapper coeff = 5 ----
+[PASS] wrapper byte0: 05
+[PASS] wrapper byte1: 80
+[PASS] wrapper coeff_done: 1
+[PASS] wrapper byte count: 2
+---- Test encoding_wrapper coeff = -5 ----
+[PASS] wrapper byte0: 85
+[PASS] wrapper byte1: 80
+[PASS] wrapper coeff_done: 1
+[PASS] wrapper byte count: 2
+---- Test encoding_wrapper coeff = 300 ----
+[PASS] wrapper byte0: 2c
+[PASS] wrapper byte1: 20
+[PASS] wrapper coeff_done: 1
+[PASS] wrapper byte count: 2
+---- Test encoding_wrapper coeff = -300 ----
+[PASS] wrapper byte0: ac
+[PASS] wrapper byte1: 20
+[PASS] wrapper coeff_done: 1
+[PASS] wrapper byte count: 2
+========================================
+ENCODING PRIMITIVE TEST PASS
+========================================
+$finish called from file "../tb/tb_encoding.v", line 571.
+$finish at simulation time              1206000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1206000 ps
+CPU Time:      0.040 seconds;       Data structure size:   0.0Mb
+Sun Jul  2 10:53:25 2017

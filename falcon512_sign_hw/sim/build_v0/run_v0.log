@@ -1,0 +1,24 @@
+Command: ./simv -l run_v0.log
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version E-2011.03-3; Runtime version E-2011.03-3;  Jun 16 16:49 2017
+time=45000 start=0 busy=0 done=0 fail=0 phase=0
+time=55000 start=0 busy=0 done=0 fail=0 phase=0
+time=65000 start=1 busy=0 done=0 fail=0 phase=0
+time=75000 start=0 busy=1 done=0 fail=0 phase=1
+time=85000 start=0 busy=1 done=0 fail=0 phase=1
+time=95000 start=0 busy=1 done=0 fail=0 phase=2
+time=105000 start=0 busy=1 done=0 fail=0 phase=3
+time=115000 start=0 busy=1 done=0 fail=0 phase=4
+time=125000 start=0 busy=1 done=0 fail=0 phase=5
+time=135000 start=0 busy=1 done=0 fail=0 phase=6
+time=145000 start=0 busy=1 done=0 fail=0 phase=7
+time=155000 start=0 busy=1 done=0 fail=0 phase=8
+time=165000 start=0 busy=1 done=0 fail=0 phase=9
+VERSION 0 PASS: skeleton top/control compile and run OK
+$finish called from file "/home/ltk/FALCON/hardware_controller_falcon/falcon512_sign_hw/tb/tb_falcon512_sign_top.v", line 53.
+$finish at simulation time               175000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 175000 ps
+CPU Time:      0.020 seconds;       Data structure size:   0.0Mb
+Fri Jun 16 16:49:43 2017

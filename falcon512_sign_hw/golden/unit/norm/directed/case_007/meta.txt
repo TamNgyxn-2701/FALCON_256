@@ -1,0 +1,9 @@
+case=7
+logn=9
+n=512
+description=sqn_s1=bound-1 plus s2 square 1
+sqn_s1=34034725
+sqn_total=34034726
+sqn_total_hex=02075426
+bound=34034726
+accepted=1

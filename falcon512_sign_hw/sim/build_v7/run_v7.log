@@ -1,0 +1,21 @@
+Command: ./build_v7/simv -l build_v7/run_v7.log
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version E-2011.03-3; Runtime version E-2011.03-3;  Oct  6 16:00 2017
+VCD+ Writer E-2011.03-3 Copyright (c) 1991-2011 by Synopsys Inc.
+FINAL RESULT
+------------
+FINAL NORM        = 574070
+NORM OK           = 1
+ACCEPT            = 1
+FAIL              = 0
+RETRY             = 0
+RETRY COUNT       = 0
+FINAL VALID SEEN  = 1
+VERSION 7 PASS: full wrapper integration completed
+$finish called from file "../tb/tb_falcon512_sign_wrapper_v7.v", line 225.
+$finish at simulation time             30966000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 30966000 ps
+CPU Time:      0.040 seconds;       Data structure size:   0.1Mb
+Fri Oct  6 16:00:04 2017

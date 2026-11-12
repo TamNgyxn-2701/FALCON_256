@@ -1,0 +1,73 @@
+Command: ./build_buffer/simv_buffer -l build_buffer/run_buffer.log
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version E-2011.03-3; Runtime version E-2011.03-3;  Jun 30 11:32 2017
+========================================
+TEST reset output
+========================================
+[PASS] DELAY_BUFFER D1 valid reset: 0
+[PASS] DELAY_BUFFER D3 valid reset: 0
+[PASS] valid_delay D1 reset: 0
+[PASS] valid_delay D3 reset: 0
+[PASS] DELAY_BUFFER D1 re reset: 00000000
+[PASS] DELAY_BUFFER D1 im reset: 00000000
+[PASS] DELAY_BUFFER D3 re reset: 00000000
+[PASS] DELAY_BUFFER D3 im reset: 00000000
+========================================
+TEST valid_delay DEPTH = 0 bypass
+========================================
+[PASS] valid_delay D0 bypass valid=1: 1
+[PASS] valid_delay D0 bypass valid=0: 0
+========================================
+TEST DELAY_BUFFER DEPTH = 1 and 3
+========================================
+[PASS] D1 valid data1: 1
+[PASS] D1 re data1: aaaa0001
+[PASS] D1 im data1: bbbb0001
+[PASS] D3 valid after cycle1: 0
+[PASS] valid_delay D3 after cycle1: 0
+[PASS] D1 valid data2: 1
+[PASS] D1 re data2: aaaa0002
+[PASS] D1 im data2: bbbb0002
+[PASS] D3 valid after cycle2: 0
+[PASS] valid_delay D3 after cycle2: 0
+[PASS] D1 valid data3: 1
+[PASS] D1 re data3: aaaa0003
+[PASS] D1 im data3: bbbb0003
+[PASS] D3 valid data1: 1
+[PASS] D3 re data1: aaaa0001
+[PASS] D3 im data1: bbbb0001
+[PASS] valid_delay D3 data1: 1
+[PASS] D1 invalid data4: 0
+[PASS] D1 re data4: aaaa0004
+[PASS] D1 im data4: bbbb0004
+[PASS] D3 valid data2: 1
+[PASS] D3 re data2: aaaa0002
+[PASS] D3 im data2: bbbb0002
+[PASS] D3 valid data3: 1
+[PASS] D3 re data3: aaaa0003
+[PASS] D3 im data3: bbbb0003
+[PASS] D3 invalid data4: 0
+[PASS] D3 re data4: aaaa0004
+[PASS] D3 im data4: bbbb0004
+========================================
+TEST ena = 0 hold behavior
+========================================
+[PASS] D3 valid before hold: 1
+[PASS] D3 re before hold: 11110001
+[PASS] D3 im before hold: 22220001
+[PASS] D3 valid hold when ena=0: 1
+[PASS] D3 re hold when ena=0: 11110001
+[PASS] D3 im hold when ena=0: 22220001
+[PASS] D1 valid hold when ena=0: 1
+[PASS] D1 re hold when ena=0: 11110003
+[PASS] D1 im hold when ena=0: 22220003
+========================================
+BUFFER PRIMITIVE TEST PASS
+========================================
+$finish called from file "../tb/tb_buffer.v", line 363.
+$finish at simulation time               186000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 186000 ps
+CPU Time:      0.120 seconds;       Data structure size:   0.0Mb
+Fri Jun 30 11:32:58 2017

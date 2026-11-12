@@ -1,0 +1,70 @@
+Command: ./build_modq/simv_modq -l build_modq/run_modq.log
+Chronologic VCS simulator copyright 1991-2011
+Contains Synopsys proprietary information.
+Compiler version E-2011.03-3; Runtime version E-2011.03-3;  Jul  2 20:59 2017
+========================================
+TEST reduce_mod_q
+========================================
+[PASS] reduce_mod_q: 0
+[PASS] reduce_mod_q: 1
+[PASS] reduce_mod_q: 12288
+[PASS] reduce_mod_q: 0
+[PASS] reduce_mod_q: 1
+[PASS] reduce_mod_q: 12288
+[PASS] reduce_mod_q: 0
+[PASS] reduce_mod_q: 12288
+[PASS] reduce_mod_q: 0
+[PASS] reduce_mod_q: 4090
+========================================
+TEST mq_add
+========================================
+[PASS] mq_add: 3
+[PASS] mq_add: 0
+[PASS] mq_add: 711
+[PASS] mq_add: 12288
+[PASS] mq_add: 711
+========================================
+TEST mq_sub
+========================================
+[PASS] mq_sub: 2
+[PASS] mq_sub: 12287
+[PASS] mq_sub: 12288
+[PASS] mq_sub: 1
+[PASS] mq_sub: 0
+[PASS] mq_sub: 4289
+========================================
+TEST mq_montymul_wrapper
+========================================
+---- mq_montymul a=1 b=1 ----
+[PASS] mq_montymul out_valid: 1
+[PASS] mq_montymul result: 2304
+[PASS] mq_montymul valid drop: 0
+---- mq_montymul a=2 b=3 ----
+[PASS] mq_montymul out_valid: 1
+[PASS] mq_montymul result: 1535
+[PASS] mq_montymul valid drop: 0
+---- mq_montymul a=100 b=200 ----
+[PASS] mq_montymul out_valid: 1
+[PASS] mq_montymul result: 8539
+[PASS] mq_montymul valid drop: 0
+---- mq_montymul a=12288 b=12288 ----
+[PASS] mq_montymul out_valid: 1
+[PASS] mq_montymul result: 2304
+[PASS] mq_montymul valid drop: 0
+---- mq_montymul a=1234 b=5678 ----
+[PASS] mq_montymul out_valid: 1
+[PASS] mq_montymul result: 4248
+[PASS] mq_montymul valid drop: 0
+---- mq_montymul a=5000 b=7000 ----
+[PASS] mq_montymul out_valid: 1
+[PASS] mq_montymul result: 12115
+[PASS] mq_montymul valid drop: 0
+========================================
+MODQ PRIMITIVE TEST PASS
+========================================
+$finish called from file "../tb/tb_modq.v", line 334.
+$finish at simulation time               236000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 236000 ps
+CPU Time:      0.110 seconds;       Data structure size:   0.0Mb
+Sun Jul  2 20:59:52 2017

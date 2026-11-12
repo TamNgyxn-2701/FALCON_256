@@ -1,0 +1,4 @@
+case=0
+logn=1
+n=2
+hn=1

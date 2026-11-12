@@ -1,0 +1,34 @@
+Command: vcs -debug +v2k -sverilog -f list_fpr_inv.f ../tb/tb_fpr_inv.v -l build_fpr_inv/compile_fpr_inv.log \
+-o build_fpr_inv/simv_fpr_inv
+                         Chronologic VCS (TM)
+           Version E-2011.03-3 -- Sun Jul  2 20:44:18 2017
+               Copyright (c) 1991-2011 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '../fpr_inv.v'
+Parsing design file '../tb/tb_fpr_inv.v'
+Top Level Modules:
+       tb_fpr_inv
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+2 modules and 0 UDP read.
+	However, due to incremental compilation, only 1 module needs to be compiled.
+recompiling module tb_fpr_inv because:
+	This module or some inlined child module(s) has/have been modified.
+ld -r -m elf_i386 -o pre_vcsobj_0_1.o --whole-archive pre_vcsobj_0_1.a --no-whole-archive \
+
+if [ -x ../build_fpr_inv/simv_fpr_inv ]; then chmod -x ../build_fpr_inv/simv_fpr_inv; \
+fi
+g++  -o ../build_fpr_inv/simv_fpr_inv -melf_i386   -Wl,-whole-archive    -Wl,-no-whole-archive \
+_vcsobj_1_1.o  5NrI_d.o 5NrIB_d.o SIM_l.o    pre_vcsobj_0_1.o  rmapats_mop.o rmapats.o \
+/home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libvirsim.so /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/librterrorinf.so \
+/home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libsnpsmalloc.so     /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libvcsnew.so \
+/home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/libuclinative.so         /home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/vcs_save_restore_new.o \
+/home/eda/synopsys/vcs_vE-2011.03-3/linux/lib/ctype-stubs_32.a -ldl -lm  -lc -lpthread \
+-ldl 
+../build_fpr_inv/simv_fpr_inv up to date
+CPU time: .044 seconds to compile + .012 seconds to elab + .056 seconds to link

@@ -1,0 +1,12 @@
+Warning: In design 'square', a pin on submodule 'add_83' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[32]' is connected to logic 0. 
+   Pin 'B[32]' is connected to logic 0. 
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'square', the same net is connected to more than one pin on submodule 'add_83'. (LINT-33)
+   Net 'n1' is connected to pins 'A[32]', 'B[32]', 'CI'. 
+Warning: In design 'square_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'square_DW01_add_1', port 'A[32]' is not connected to any nets. (LINT-28)
+Warning: In design 'square_DW01_add_1', port 'B[32]' is not connected to any nets. (LINT-28)
+Warning: In design 'square_DW01_add_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'square_DW01_add_1', port 'CO' is not connected to any nets. (LINT-28)
+1

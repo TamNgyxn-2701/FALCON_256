@@ -1,0 +1,15 @@
+add_calls=516
+add_values=7168
+sub_calls=511
+sub_values=4608
+neg_calls=4
+neg_values=2048
+mul_calls=517
+mul_values=7680
+muladj_calls=2
+muladj_values=1024
+mulselfadj_calls=4
+mulselfadj_values=2048
+mulconst_calls=2
+mulconst_values=1024
+mulconst_constants=2
